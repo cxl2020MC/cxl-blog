@@ -3,13 +3,9 @@
 </script>
 
 <template>
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+    <BlogHeader></BlogHeader>
 </template>
 
 <style>
-body {
-    margin: 0;
-}
+
 </style>
