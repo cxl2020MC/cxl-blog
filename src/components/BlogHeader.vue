@@ -12,38 +12,43 @@ const menu_links = [
     }
 ]
 
+const menu_dialog = ref<any>(null)
 </script>
 
 <template>
-    <header id="blog-menu">
-        <nav id="nav">
-            <div id="blog-menu-info">
-                <span id="blog-menu-title">cxl2020mc`s Blog</span>
-            </div>
-            <div id="blog-menu-buttom">
-                <a href="https://github.com/cxl2020mc" target="_blank">
-                    <icon name="fa-brands:github" class="blog-menu-icon"></icon>
-                </a>
-            </div>
-        </nav>
-        <div id="blog-menu-links">
-                <a v-for="link in menu_links" :key="link.name" :href="link.link">
-                    <icon v-if="link.icon" :name="link.icon" class="blog-menu-icon"></icon>
-                    <span>{{ link.name }}</span>
-                </a>
+    <nav id="navbar">
+        <a id="site-name">cxl2020mc`s Blog</a>
+        <div id="blog-menu-items">
+            <button class="blog-menu-item">
+                <icon name="fa6-brands:github" class="blog-menu-icon"></icon>
+            </button>
+            <button class="blog-menu-item" id="blog-menu-buttom" @cilck="menu_dialog.open">
+                <icon name="fa6-solid:bars" class="blog-menu-icon"></icon>
+            </button>
         </div>
-    </header>
+    </nav>
+    <!-- <div id="blog-menu">
+            <a v-for="link in menu_links" :key="link.name" :href="link.link">
+                <icon v-if="link.icon" :name="link.icon" class="blog-menu-icon"></icon>
+                <span>{{ link.name }}</span>
+            </a>
+    </div> -->
+    <dialog-html name="菜单" id="menu-dialog" ref="menu_dialog">
+        <div id="blog-menu">
+            <a v-for="link in menu_links" :key="link.name" :href="link.link">
+                <icon v-if="link.icon" :name="link.icon" class="blog-menu-icon"></icon>
+                <span>{{ link.name }}</span>
+            </a>
+        </div>
+    </dialog-html>
 </template>
 
 <style scoped>
-#blog-menu {
-    width: 100%;
-}
-
-#nav {
-    position: fixed;
+#navbar {
+    position: sticky;
     top: 0;
-    width: 100%;
+    left: 0;
+    /* width: 100%; */
     z-index: 1000;
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.8);
@@ -55,34 +60,54 @@ const menu_links = [
     align-items: center;
 }
 
-
-#blog-menu-info {
-    display: flex;
-    height: 3em;
+#navbar a {
     align-items: center;
+    color: #333;
+    text-decoration: none;
 }
 
-#blog-menu-title {
+#site-name {
+    height: 3rem;
+    align-items: center;
+    display: flex;
     font-size: 1.5em;
     font-weight: bold;
     color: #333;
 }
 
-#blog-menu-links {
+#blog-menu-items {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 0.5em;
+}
+
+.blog-menu-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+}
+
+#blog-menu-buttom {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+#blog-menu {
     display: flex;
     justify-self: center;
     gap: 0.5em;
 }
 
-#blog-menu-links a {
+#blog-menu a {
     display: flex;
     align-items: center;
     color: #333;
     text-decoration: none
-    
 }
 
-#blog-menu-links .blog-menu-icon {
+#blog-menu .blog-menu-icon {
     margin-right: 0.5em;
 }
 </style>

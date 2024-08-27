@@ -4,8 +4,11 @@
 
 <template>
     <div class="container">
-        <h1>Home</h1>
-        <p>Home page content</p>
+        <template v-for="item in 10">
+            <div>
+                <h1>{{ item }}</h1>
+            </div>
+        </template>
     </div>
 </template>
 
