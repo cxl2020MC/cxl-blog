@@ -85,6 +85,13 @@ const menu_dialog = ref<any | null>(null)
     display: flex;
     align-items: center;
     gap: 0.5em;
+    container: blog-menu-items / size;
+}
+
+@container blog-menu-items(max-height > 2em) {
+    #blog-menu {
+        display: none;
+    }
 }
 
 .blog_menu-item {
