@@ -64,6 +64,10 @@ const menu_links = [
     gap: 0.5em;
 }
 
+#blog-menu-links a {
+    color: #333;
+}
+
 #blog-menu-links .blog-menu-icon {
     margin-right: 0.5em;
 }
