@@ -7,6 +7,7 @@ const menu_links = [
     },
     {
         name: 'About',
+        icon: 'fa6-solid:address-card',
         link: '/about'
     }
 ]
