@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const RuntimeConfig = useRuntimeConfig()
-const site_name = RuntimeConfig.site_name
+const site_name = RuntimeConfig.public.site_name
+
 const menu_links = [
     {
         name: '友链',
