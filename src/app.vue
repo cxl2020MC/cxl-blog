@@ -1,4 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import "~/assets/css/stylus.css";
+
+</script>
 
 <template>
   <NuxtLayout>
