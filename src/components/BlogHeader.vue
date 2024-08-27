@@ -69,6 +69,7 @@ const menu_links = [
 
 #blog-menu-links {
     display: flex;
+    justify-self: center;
     gap: 0.5em;
 }
 
