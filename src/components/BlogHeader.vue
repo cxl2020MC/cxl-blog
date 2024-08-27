@@ -23,12 +23,12 @@ const menu_dialog = ref<any | null>(null)
     <nav id="navbar">
         <a id="site-name">{{ site_name }}</a>
 
-        <!-- <div id="blog-menu-items">
+        <div id="blog-menu-items">
             <a class="blog_menu-item" v-for="link in menu_links" :key="link.name" :href="link.link">
                 <icon v-if="link.icon" :name="link.icon" class="blog-menu-icon"></icon>
                 <span>{{ link.name }}</span>
             </a>
-        </div> -->
+        </div>
         <div id="blog-menu-buttons">
             <button class="blog-menu-button">
                 <icon name="fa6-brands:github" class="blog-menu-icon"></icon>
@@ -38,7 +38,7 @@ const menu_dialog = ref<any | null>(null)
             </button>
         </div>
     </nav>
-    <BlogD_dialog name="菜单" show="true" id="menu-dialog" ref="menu_dialog">
+    <BlogD_dialog v-if="false" name="菜单" show="false" id="menu-dialog" ref="menu_dialog">
         <div id="blog-menu">
             <a v-for="link in menu_links" :key="link.name" :href="link.link">
                 <icon v-if="link.icon" :name="link.icon" class="blog-menu-icon"></icon>
@@ -80,7 +80,7 @@ const menu_dialog = ref<any | null>(null)
     color: #333;
 }
 
-/* 
+
 #blog-menu-items {
     display: flex;
     align-items: center;
@@ -98,7 +98,7 @@ const menu_dialog = ref<any | null>(null)
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
-*/
+
 
 .blog_menu-item:hover {
     background-color: rgba(0, 0, 0, 0.1)
