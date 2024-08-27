@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { blog_config } from './blog.config'
+import { BlogConfig } from './blog.config'
 
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
@@ -24,7 +24,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      ...blog_config,
+      ...BlogConfig,
       BuildTime: new Date().toLocaleString("zh-CN", { timeZone: "Asia/Shanghai"}),
     }
   },

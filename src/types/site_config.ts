@@ -1,5 +1,12 @@
 interface site_config {
     /**
+     * 站点语言
+     * 例如：zh-CN
+     * 参考：https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Accept-Language
+     */
+    language: string;
+
+    /**
      * 站点名
      */
     site_name: string;
@@ -43,9 +50,9 @@ interface author_config {
     description: string;
 
     /**
-     * 作者社交信息
+     * 作者邮箱
      */
-    social: {}
+    email: string;
 }
 
 export type { author_config, site_config };

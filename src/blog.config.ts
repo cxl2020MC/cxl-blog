@@ -1,10 +1,11 @@
-import type { site_config } from '~/types/site_config'
+import type { author_config, site_config } from '~/types/site_config'
 
 export const author_config = {
     
 }
 
-export const blog_config: site_config = {
+export const BlogConfig: site_config = {
+    language: 'zh-CN',
     site_name: 'cxl`s Blog',
     description: '原神启动',
     url: 'https://blog-nuxt.cxl2020mc.top',
