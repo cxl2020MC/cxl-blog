@@ -3,7 +3,10 @@
 </script>
 
 <template>
-    <h2>这里是主页</h2>
+    <div class="container">
+        <h1>Home</h1>
+        <p>Home page content</p>
+    </div>
 </template>
 
 <style>

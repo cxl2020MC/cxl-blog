@@ -26,6 +26,24 @@ const menu_links = [
                     <span>{{ link.name }}</span>
                 </a>
             </div>
+            <div id="blog-menu-buttom">
+                <a href="https://github.com/cxl2020mc" target="_blank">
+                    <icon name="fa-brands:github" class="blog-menu-icon"></icon>
+                </a>
+            </div>
+        </nav>
+    </header>
+</template>
+
+<style scoped>
+#blog-menu {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+            </div>
         </nav>
     </header>
 </template>
