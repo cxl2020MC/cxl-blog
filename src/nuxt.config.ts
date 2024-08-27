@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     head: {
       title: 'cxl2020mc`s Blog',
       htmlAttrs: {
-        lang: 'zh-CN'
+        lang: 'zh-CN',
+        "data-theme": "light"
       },
       meta: [
         // { name: 'viewport', content: 'width=device-width, initial-scale=1' }
