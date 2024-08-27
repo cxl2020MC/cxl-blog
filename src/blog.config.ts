@@ -1,6 +1,6 @@
 import type { author_config, site_config } from '~/types/site_config'
 
-export const author_config = {
+export const AuthorConfig = {
     
 }
 

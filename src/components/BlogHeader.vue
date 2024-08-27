@@ -16,7 +16,7 @@ const menu_links = [
 ]
 
 
-const menu_dialog = ref<any>(null)
+const menu_dialog = ref<any | null>(null)
 </script>
 
 <template>
