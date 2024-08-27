@@ -72,7 +72,6 @@ const menu_dialog = ref<any>(null)
 #blog-menu-buttons {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
     gap: 0.5em;
 }
 
@@ -80,6 +79,7 @@ const menu_dialog = ref<any>(null)
     display: flex;
     align-items: center;
     padding: 0.5em;
+    font-size: 1.5rem;
     background: none;
     border: none;
     border-radius: 10px;
