@@ -37,19 +37,6 @@ const menu_links = [
 
 <style scoped>
 #blog-menu {
-    width: 100%;
-    height: 60px;
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-            </div>
-        </nav>
-    </header>
-</template>
-
-<style scoped>
-#blog-menu {
     position: fixed;
     top: 0;
     width: 100%;
