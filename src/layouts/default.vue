@@ -5,7 +5,7 @@
 <template>
     <BlogHeader></BlogHeader>
     <div class="main">
-        <slot></slot>
+        <slot />
     </div>
 </template>
 
