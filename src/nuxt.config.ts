@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { blog_config } from './blog.config'
+
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
@@ -22,9 +24,8 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      apiBase: process.env.API_BASE || 'http://localhost:3000/api',
+      ...blog_config,
       BuildTime: new Date().toLocaleString("zh-CN", { timeZone: "Asia/Shanghai"}),
-      site_name: 'cxl`s Blog',
     }
   },
 

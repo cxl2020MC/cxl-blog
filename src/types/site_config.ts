@@ -1,43 +1,29 @@
-interface SiteConfig {
+interface site_config {
     /**
-     * The name of the site.
+     * 站点名
      */
     site_name: string;
 
     /**
-     * The description of the site.
+     * 网站描述
      */
     description: string;
 
     /**
-     * The author of the site.
-     * This is used for social media sharing.
+     * 作者
      */
     author: string;
 
     /**
-     * The URL of the site.
+     * 网站对外访问url
      */
     url: string;
 
     /**
-     * The URL of the site's logo.
+     * 后端接口地址
+     * 例如：http://localhost:3000/api
      */
-    logo: string;
-
-    /**
-     * The URL of the site's favicon.
-     */
-    favicon: string;
-
-    /**
-     * The URLs of the site's cover image.
-     * This is used for social media sharing.
-     */
-    cover: string[];
-
-    /**
-     * The URL of the site's author.
-     */
-    
+    api_url: string;
 } 
+
+export type { site_config };
