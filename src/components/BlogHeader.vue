@@ -2,6 +2,7 @@
 const menu_links = [
     {
         name: 'links',
+        icon: 'fa6-solid:link',
         link: '/links'
     },
     {
@@ -19,7 +20,10 @@ const menu_links = [
                 <span id="blog-menu-title">cxl2020mc`s Blog</span>
             </div>
             <div id="blog-menu-links">
-                <a v-for="link in menu_links" :key="link.name" :href="link.link">{{ link.name }}</a>
+                <a v-for="link in menu_links" :key="link.name" :href="link.link">
+                    <icon v-if="link.icon" :name="link.icon" class="blog-menu-icon"></icon>
+                    <span>{{ link.name }}</span>
+                </a>
             </div>
         </nav>
     </header>
@@ -58,6 +62,10 @@ const menu_links = [
     /* justify-content: flex-end; */
     /* align-items: center; */
     gap: 0.5em;
+}
+
+#blog-menu-links .blog-menu-icon {
+    margin-right: 0.5em;
 }
 
 #blog-menu-title {
