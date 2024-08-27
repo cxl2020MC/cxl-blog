@@ -18,21 +18,15 @@ const menu_dialog = ref<any>(null)
 <template>
     <nav id="navbar">
         <a id="site-name">cxl2020mc`s Blog</a>
-        <div id="blog-menu-items">
-            <button class="blog-menu-item">
+        <div id="blog-menu-buttons">
+            <button class="blog-menu-button">
                 <icon name="fa6-brands:github" class="blog-menu-icon"></icon>
             </button>
-            <button class="blog-menu-item" id="blog-menu-buttom" @cilck="menu_dialog.open">
+            <button class="blog-menu-button" id="blog-menu-buttom" @click="menu_dialog?.open()">
                 <icon name="fa6-solid:bars" class="blog-menu-icon"></icon>
             </button>
         </div>
     </nav>
-    <!-- <div id="blog-menu">
-            <a v-for="link in menu_links" :key="link.name" :href="link.link">
-                <icon v-if="link.icon" :name="link.icon" class="blog-menu-icon"></icon>
-                <span>{{ link.name }}</span>
-            </a>
-    </div> -->
     <dialog-html name="菜单" id="menu-dialog" ref="menu_dialog">
         <div id="blog-menu">
             <a v-for="link in menu_links" :key="link.name" :href="link.link">
@@ -75,23 +69,26 @@ const menu_dialog = ref<any>(null)
     color: #333;
 }
 
-#blog-menu-items {
+#blog-menu-buttons {
     display: flex;
     align-items: center;
     font-size: 1.5rem;
     gap: 0.5em;
 }
 
-.blog-menu-item {
+.blog-menu-button {
     display: flex;
     align-items: center;
     padding: 0.5em;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
-#blog-menu-buttom {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
+.blog-menu-button:hover {
+    background-color: rgba(0, 0, 0, 0.1)
 }
 
 #blog-menu {
