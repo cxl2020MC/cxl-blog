@@ -20,34 +20,35 @@ const menu_links = [
             <div id="blog-menu-info">
                 <span id="blog-menu-title">cxl2020mc`s Blog</span>
             </div>
-            <div id="blog-menu-links">
-                <a v-for="link in menu_links" :key="link.name" :href="link.link">
-                    <icon v-if="link.icon" :name="link.icon" class="blog-menu-icon"></icon>
-                    <span>{{ link.name }}</span>
-                </a>
-            </div>
             <div id="blog-menu-buttom">
                 <a href="https://github.com/cxl2020mc" target="_blank">
                     <icon name="fa-brands:github" class="blog-menu-icon"></icon>
                 </a>
             </div>
         </nav>
+        <div id="blog-menu-links">
+                <a v-for="link in menu_links" :key="link.name" :href="link.link">
+                    <icon v-if="link.icon" :name="link.icon" class="blog-menu-icon"></icon>
+                    <span>{{ link.name }}</span>
+                </a>
+        </div>
     </header>
 </template>
 
 <style scoped>
 #blog-menu {
+    width: 100%;
+}
+
+#nav {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.8)
-}
+    background-color: rgba(255, 255, 255, 0.8);
 
-#nav {
     display: flex;
-    /* height: 3em; */
     margin: 0 auto;
     padding: 0 1em;
     justify-content: space-between;
