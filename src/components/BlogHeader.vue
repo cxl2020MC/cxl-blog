@@ -1,12 +1,12 @@
 <script setup lang="ts">
 const menu_links = [
     {
-        name: 'links',
+        name: '友链',
         icon: 'fa6-solid:link',
         link: '/links'
     },
     {
-        name: 'About',
+        name: '关于',
         icon: 'fa6-solid:address-card',
         link: '/about'
     }
@@ -32,7 +32,6 @@ const menu_links = [
 
 <style scoped>
 #blog-menu {
-    /* display: fixed; */
     position: fixed;
     top: 0;
     width: 100%;
@@ -43,7 +42,7 @@ const menu_links = [
 
 #nav {
     display: flex;
-    height: 3em;
+    /* height: 3em; */
     margin: 0 auto;
     padding: 0 1em;
     justify-content: space-between;
@@ -53,15 +52,18 @@ const menu_links = [
 
 #blog-menu-info {
     display: flex;
-    /* justify-content: flex-start; */
-    /* align-items: center; */
-    /* height: 3em; */
+    height: 3em;
+    align-items: center;
+}
+
+#blog-menu-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
 }
 
 #blog-menu-links {
     display: flex;
-    /* justify-content: flex-end; */
-    /* align-items: center; */
     gap: 0.5em;
 }
 
@@ -75,11 +77,5 @@ const menu_links = [
 
 #blog-menu-links .blog-menu-icon {
     margin-right: 0.5em;
-}
-
-#blog-menu-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333
 }
 </style>
