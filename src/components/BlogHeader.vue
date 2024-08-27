@@ -88,7 +88,7 @@ const menu_dialog = ref<any | null>(null)
     container: blog-menu-items / size;
 }
 
-@container blog-menu-items(max-height > 2em) {
+@container blog-menu-items (height > 3em) {
     #blog-menu {
         display: none;
     }
