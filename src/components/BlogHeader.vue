@@ -66,6 +66,7 @@ const menu_links = [
 
 #blog-menu-links a {
     color: #333;
+    text-decoration: none
 }
 
 #blog-menu-links .blog-menu-icon {
