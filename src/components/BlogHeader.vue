@@ -65,8 +65,11 @@ const menu_links = [
 }
 
 #blog-menu-links a {
+    display: flex;
+    align-items: center;
     color: #333;
     text-decoration: none
+    
 }
 
 #blog-menu-links .blog-menu-icon {
