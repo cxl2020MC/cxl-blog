@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'cxl2020mc`s Blog',
+      title: 'cxl`s Blog',
       htmlAttrs: {
         lang: 'zh-CN',
         "data-theme": "light"
