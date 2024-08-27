@@ -26,4 +26,26 @@ interface site_config {
     api_url: string;
 } 
 
-export type { site_config };
+interface author_config {
+    /**
+     * 作者名字
+     */
+    name: string;
+    /**
+     * 作者头像
+     */
+    avatar: string;
+
+    /**
+     * 作者简介
+     * 例如：前端开发工程师，热爱技术，乐于分享
+     */
+    description: string;
+
+    /**
+     * 作者社交信息
+     */
+    social: {}
+}
+
+export type { author_config, site_config };
