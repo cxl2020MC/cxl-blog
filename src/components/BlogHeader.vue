@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const RuntimeConfig = useRuntimeConfig()
+const site_name = RuntimeConfig.site_name
 const menu_links = [
     {
         name: '友链',
@@ -12,12 +14,13 @@ const menu_links = [
     }
 ]
 
+
 const menu_dialog = ref<any>(null)
 </script>
 
 <template>
     <nav id="navbar">
-        <a id="site-name">cxl2020mc`s Blog</a>
+        <a id="site-name">{{ site_name }}</a>
         <div id="blog-menu-buttons">
             <button class="blog-menu-button">
                 <icon name="fa6-brands:github" class="blog-menu-icon"></icon>
