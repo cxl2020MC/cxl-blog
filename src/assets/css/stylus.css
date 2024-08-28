@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "Source Han Sans CN";
+    src: url("https://cxl2020mc-1304820025.file.myqcloud.com/fonts/Source_Han_Sans/SourceHanSansCN-VF.ttf.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "Source Han Sans CN", sans-serif;
+}
+
 :root {
     --card-border: 1px solid var(--theme-color-gay);
     --input-border: 1px solid var(--theme-color-gay);
@@ -27,14 +39,13 @@ body {
     margin: 0;
     background-color: var(--bg-color);
     color: var(--text-color);
-    /* font-family: 'Noto Sans TC', sans-serif; */
     font-size: 1rem;
     line-height: 1.5;
     -webkit-tap-highlight-color: transparent
 }
 
 
-:root {
+body {
     scrollbar-width: thin;
 }
 
@@ -50,5 +61,4 @@ body {
 
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
-    /* border-radius: 999em; */
 }
