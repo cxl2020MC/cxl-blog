@@ -4,7 +4,7 @@
 
 <template>
     <div class="container">
-        <template v-for="item in 10">
+        <template v-for="item in 20">
             <div>
                 <h1>{{ item }}</h1>
             </div>
