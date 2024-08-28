@@ -33,17 +33,17 @@ body {
     /* overflow-x: hidden; */
 }
 
-:root::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 0.5em;
 }
 
-:root::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: skyblue;
     height: 0.5em;
     border-radius: 999em;
 }
 
-:root::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: #f1f1f1;
     /* border-radius: 999em; */
 }
