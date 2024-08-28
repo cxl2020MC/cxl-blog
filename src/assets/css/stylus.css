@@ -47,6 +47,7 @@ body {
     /* border-radius: 999em; */
 }
 
-:root {
+body {
     scrollbar-width: thin;
+    -webkit-tap-highlight-color: transparent
 }
