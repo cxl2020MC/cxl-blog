@@ -15,6 +15,7 @@
 </template>
 
 <script setup lang="ts">
+// import type { Article } from '~/types/aricle'
 const props = defineProps<{
     article: {
         title: string;
@@ -80,11 +81,5 @@ const props = defineProps<{
 .article-info p {
     margin: 0.5rem 0;
     font-size: 1rem;
-}
-
-.article-info a {
-    margin: 0;
-    font-size: 1rem;
-    text-decoration: none;
 }
 </style>
