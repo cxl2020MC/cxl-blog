@@ -47,7 +47,7 @@ defineEmits<{
     border-bottom-left-radius: 10px;
     padding: 1em;
     z-index: 9999;
-    background-color: var(--background-color);
+    background-color: var(--bg-color);
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
 }

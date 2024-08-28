@@ -88,7 +88,12 @@ const menu_dialog = ref<any | null>(null)
     align-items: center;
     justify-content: center;
     gap: 0.5em;
-    /* container: blog-menu-items / size; */
+}
+
+@media (max-width: 700px) {
+    #blog-menu-items {
+        display: none
+    }
 }
 
 .blog-menu-item {
@@ -102,13 +107,6 @@ const menu_dialog = ref<any | null>(null)
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
-
-@container blog-menu-items (height > 3em) {
-    .blog-menu-item {
-        display: none;
-    }
-}
-
 
 .blog_menu-item:hover {
     background-color: rgba(0, 0, 0, 0.1)

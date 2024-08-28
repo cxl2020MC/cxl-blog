@@ -6,7 +6,7 @@
 }
 
 [data-theme="light"] {
-    --background-color: #f9f4dc;
+    --bg-color: #f9f4dc;
     --text-color: #333;
     --text-color-light: #fff;
     --theme-color: var(--theme-color-blue);
@@ -25,12 +25,17 @@
 
 body {
     margin: 0;
-    background-color: var(--background-color);
+    background-color: var(--bg-color);
     color: var(--text-color);
     /* font-family: 'Noto Sans TC', sans-serif; */
     font-size: 1rem;
     line-height: 1.5;
     -webkit-tap-highlight-color: transparent
+}
+
+
+:root {
+    scrollbar-width: thin;
 }
 
 ::-webkit-scrollbar {
@@ -46,8 +51,4 @@ body {
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
     /* border-radius: 999em; */
-}
-
-:root {
-    scrollbar-width: thin;
 }
