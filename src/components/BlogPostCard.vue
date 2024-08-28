@@ -31,6 +31,7 @@ const props = defineProps<{
     display: flex;
     align-items: center;
     width: 100%;
+    height: 15em;
     border: var(--card-border);
     border-radius: var(--card-border-radius);
     background: var(--card-bg);
