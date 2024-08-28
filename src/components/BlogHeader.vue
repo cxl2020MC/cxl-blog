@@ -83,6 +83,7 @@ const menu_dialog = ref<any | null>(null)
 
 #blog-menu-items {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 0.5em;
     /* container: blog-menu-items / size; */
