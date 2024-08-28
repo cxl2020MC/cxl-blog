@@ -33,43 +33,21 @@ body {
     /* overflow-x: hidden; */
 }
 
-a {
-    color: var(--theme-color);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--theme-color-dark);
-}
-
-a:active {
-    color: var(--theme-color-red);
-}
-
-a:visited {
-    color: var(--theme-color-blue);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-}
-
-*::-webkit-scrollbar {
+:root::-webkit-scrollbar {
     width: 0.5em;
 }
 
-*::-webkit-scrollbar-thumb {
+:root::-webkit-scrollbar-thumb {
     background: skyblue;
     height: 0.5em;
     border-radius: 999em;
 }
 
-*::-webkit-scrollbar-track {
+:root::-webkit-scrollbar-track {
     background: #f1f1f1;
     /* border-radius: 999em; */
+}
+
+:root {
+    scrollbar-width: thin;
 }

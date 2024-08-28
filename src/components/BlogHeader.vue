@@ -24,7 +24,7 @@ const menu_dialog = ref<any | null>(null)
         <a id="site-name">{{ site_name }}</a>
 
         <div id="blog-menu-items">
-            <a class="blog_menu-item" v-for="link in menu_links" :key="link.name" :href="link.link">
+            <a class="blog-menu-item" v-for="link in menu_links" :key="link.name" :href="link.link">
                 <icon v-if="link.icon" :name="link.icon" class="blog-menu-icon"></icon>
                 <span>{{ link.name }}</span>
             </a>
@@ -85,16 +85,10 @@ const menu_dialog = ref<any | null>(null)
     display: flex;
     align-items: center;
     gap: 0.5em;
-    container: blog-menu-items / size;
+    /* container: blog-menu-items / size; */
 }
 
-@container blog-menu-items (height > 3em) {
-    #blog-menu {
-        display: none;
-    }
-}
-
-.blog_menu-item {
+.blog-menu-item {
     display: flex;
     align-items: center;
     padding: 0.5em;
@@ -104,6 +98,12 @@ const menu_dialog = ref<any | null>(null)
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
+}
+
+@container blog-menu-items (height > 3em) {
+    .blog-menu-item {
+        display: none;
+    }
 }
 
 
