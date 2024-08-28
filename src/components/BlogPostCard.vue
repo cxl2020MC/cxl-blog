@@ -59,11 +59,21 @@ const props = defineProps<{
 
 .article-info {
     padding: 1em;
+    margin-bottom: auto;
+}
+
+.article-info a {
+    color: var(--text-color);
+    transition: .3s ease-in-out;
+}
+
+.article-info a:hover {
+    color: var(--theme-color);
 }
 
 .article-info h3 {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
