@@ -1,12 +1,14 @@
 <template>
     <div class="article-card">
         <div class="article-image">
-            <a :href="article.link" target="_blank">
+            <a :href="article.link">
                 <img :src="article.image" :alt="article.title" />
             </a>
         </div>
         <div class="article-info">
-            <h3>{{ article.title }}</h3>
+            <a :href="article.link">
+                <h3>{{ article.title }}</h3>
+            </a>
             <p>{{ article.description }}</p>
         </div>
     </div>
@@ -29,9 +31,8 @@ const props = defineProps<{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 10em;
+    border: var(--card-border);
     border-radius: var(--card-border-radius);
-    /* box-shadow: var(--card-box-shadow) */
     background: var(--card-bg);
 }
 
@@ -56,10 +57,7 @@ const props = defineProps<{
 }
 
 .article-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem 0;
+    padding: 1em;
 }
 
 .article-info h3 {
@@ -77,10 +75,5 @@ const props = defineProps<{
     margin: 0;
     font-size: 1rem;
     text-decoration: none;
-    color: #007bff;
-}
-
-.article-info a:hover {
-    text-decoration: underline;
 }
 </style>

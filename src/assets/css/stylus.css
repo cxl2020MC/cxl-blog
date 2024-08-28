@@ -45,7 +45,6 @@ body {
     -webkit-tap-highlight-color: transparent
 }
 
-
 body {
     scrollbar-width: thin;
 }
@@ -63,4 +62,9 @@ body {
 
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
+}
+
+a {
+    color: var(--theme-color);
+    text-decoration: none;
 }
