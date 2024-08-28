@@ -13,12 +13,13 @@ body {
 :root {
     --card-border: 1px solid var(--theme-color-gay);
     --input-border: 1px solid var(--theme-color-gay);
-    --bottom-border-readius: 7px;
-    --card-border-radius: 7px;
+    --bottom-border-readius: 10px;
+    --card-border-radius: 10px;
 }
 
 [data-theme="light"] {
     --bg-color: #f9f4dc;
+    --card-bg: #fff;
     --text-color: #333;
     --text-color-light: #fff;
     --theme-color: var(--theme-color-blue);
@@ -51,6 +52,7 @@ body {
 
 ::-webkit-scrollbar {
     width: 0.5em;
+    height: 0.5em
 }
 
 ::-webkit-scrollbar-thumb {

@@ -38,14 +38,14 @@ const menu_dialog = ref<any | null>(null)
             </button>
         </div>
     </nav>
-    <BlogD_dialog v-if="false" name="菜单" show="false" id="menu-dialog" ref="menu_dialog">
+    <BlogDialog name="菜单" id="menu-dialog" ref="menu_dialog">
         <div id="blog-menu">
             <a v-for="link in menu_links" :key="link.name" :href="link.link">
                 <icon v-if="link.icon" :name="link.icon" class="blog-menu-icon"></icon>
                 <span>{{ link.name }}</span>
             </a>
         </div>
-    </BlogD_dialog>
+    </BlogDialog>
 </template>
 
 <style scoped>
@@ -90,7 +90,7 @@ const menu_dialog = ref<any | null>(null)
     gap: 0.5em;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     #blog-menu-items {
         display: none
     }
@@ -100,15 +100,15 @@ const menu_dialog = ref<any | null>(null)
     display: flex;
     align-items: center;
     padding: 0.5em;
-    font-size: 1.5rem;
     background: none;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    gap: 0.5em;
     transition: background-color 0.3s ease-in-out;
 }
 
-.blog_menu-item:hover {
+.blog-menu-item:hover {
     background-color: rgba(0, 0, 0, 0.1)
 }
 
