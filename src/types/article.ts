@@ -4,10 +4,10 @@ interface Article {
     description: string;
     image: string;
     link: string;
-    createdAt: string;
-    updatedAt: string;
-    tags: string[];
-    post_icon: string;
+    createdAt?: string;
+    updatedAt?: string;
+    tags?: string[];
+    post_icon?: string;
 }
 
 export type { Article };

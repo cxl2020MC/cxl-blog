@@ -1,28 +1,23 @@
 <template>
     <div class="article-card">
         <div class="article-image">
-            <a :href="article.link">
+            <a :href="props.article.link">
                 <img :src="article.image" :alt="article.title" />
             </a>
         </div>
         <div class="article-info">
-            <a :href="article.link">
-                <h3>{{ article.title }}</h3>
+            <a :href="props.article.link">
+                <h3>{{ props.article.title }}</h3>
             </a>
-            <p>{{ article.description }}</p>
+            <p>{{ props.article.description }}</p>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
-// import type { Article } from '~/types/aricle'
+import type { Article } from '~/types/article'
 const props = defineProps<{
-    article: {
-        title: string;
-        description: string;
-        image: string;
-        link: string;
-    }
+    article: Article
 }>()
 
 </script>
