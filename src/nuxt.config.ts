@@ -30,7 +30,7 @@ export default defineNuxtConfig({
   },
 
   image: {
-    // domains: BlogConfig.image_domains,
+    domains: BlogConfig.image_domains,
     format: ['avif', 'webp'],
   },
 
