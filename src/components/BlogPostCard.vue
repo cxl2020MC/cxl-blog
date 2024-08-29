@@ -86,26 +86,24 @@ const props = defineProps<{
 }
 
 img.image-load {
-    overflow: hidden;
-}
-
-img.image-load::after {
-    content: '';
-    position: absolute;
-    inset: -20%;
     background: #f6f7f8;
-    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background: linear-gradient(
+        100deg,
+        #eeeeee,
+        #dddddd,
+        #eeeeee
+    );
     background-size: 200% 100%;
-    animation: shimmer 2s infinite;
+    animation: shimmer 1s infinite;
 }
 
 @keyframes shimmer {
     0% {
-        background-position: -100% 0;
+        background-position-x: -120%;
     }
 
     100% {
-        background-position: 100% 0;
+        background-position-x: 20%;
     }
 }
 </style>
