@@ -1,3 +1,10 @@
+
+interface Tags {
+    id?: number;
+    name: string;
+    link?: string;
+}
+
 interface Article {
     id?: number;
     title: string;
@@ -6,8 +13,10 @@ interface Article {
     link: string;
     createdAt?: string;
     updatedAt?: string;
-    tags?: string[];
+    tags?: Tags[];
     post_icon?: string;
 }
 
-export type { Article };
+
+
+export type { Tags, Article };
