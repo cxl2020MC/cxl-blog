@@ -24,7 +24,7 @@ interface site_config {
     /**
      * 网站对外访问url
      */
-    url: string;
+    site_url: string;
 
     /**
      * 后端接口地址
