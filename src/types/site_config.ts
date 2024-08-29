@@ -33,7 +33,7 @@ interface site_config {
     api_url: string;
     
 
-    image_domains: string[];
+    image_domains?: string[];
 } 
 
 interface author_config {

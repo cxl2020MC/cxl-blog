@@ -2,8 +2,7 @@
     <div class="article-card">
         <div class="article-image">
             <a :href="props.article.link">
-                <NuxtImg :src="article.image" :alt="article.title" placeholder-class="img-loading"
-                    loading="lazy" />
+                <NuxtImg :src="article.image" :alt="article.title" loading="lazy" />
             </a>
         </div>
         <div class="article-info">
@@ -85,8 +84,7 @@ const props = defineProps<{
     font-size: 1rem;
 }
 
-img.img-loading {
-    /* background: gray; */
+/* img.img-loading {
     background: linear-gradient(
         100deg,
         rgba(100, 100,100, 0.2),
@@ -105,5 +103,5 @@ img.img-loading {
     100% {
         background-position-x: -100%;
     }
-}
+} */
 </style>
