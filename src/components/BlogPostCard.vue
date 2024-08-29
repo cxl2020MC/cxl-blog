@@ -85,25 +85,25 @@ const props = defineProps<{
     font-size: 1rem;
 }
 
-img.img-load {
-    background: #f6f7f8;
+img.img-loading {
+    /* background: gray; */
     background: linear-gradient(
         100deg,
-        #eeeeee,
-        #dddddd,
-        #eeeeee
+        rgba(100, 100,100, 0.2),
+        rgba(255, 255, 255, 0.5),
+        rgba(100, 100, 100, 0.2)
     );
     background-size: 200% 100%;
-    animation: shimmer 1s infinite;
+    animation: shimmer 2s infinite ease-in-out;
 }
 
 @keyframes shimmer {
     0% {
-        background-position-x: -120%;
+        background-position-x: 100%;
     }
 
     100% {
-        background-position-x: 20%;
+        background-position-x: -100%;
     }
 }
 </style>
