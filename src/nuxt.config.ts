@@ -10,7 +10,6 @@ export default defineNuxtConfig({
     head: {
       title: "cxl`s Blog",
       htmlAttrs: {
-        lang: "zh-CN",
         "data-theme": "light",
       },
       meta: [
