@@ -2,7 +2,7 @@
     <div class="article-card">
         <div class="article-image">
             <a :href="props.article.link">
-                <img :src="article.image" :alt="article.title" />
+                <NuxtImg :src="article.image" :alt="article.title" />
             </a>
         </div>
         <div class="article-info">
@@ -16,6 +16,7 @@
 </template>
 
 <script setup lang="ts">
+import { NuxtImg } from '#build/components';
 import type { Article } from '~/types/article'
 const props = defineProps<{
     article: Article
