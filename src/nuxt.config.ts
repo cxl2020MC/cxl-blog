@@ -20,6 +20,10 @@ export default defineNuxtConfig({
     },
   },
 
+  appConfig: {
+    ...BlogConfig,
+  },
+
   runtimeConfig: {
     public: {
       api_url: BlogConfig.api_url,

@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const RuntimeConfig = useRuntimeConfig()
-const site_name = RuntimeConfig.public.site_name
+const Config = useAppConfig()
+
+const site_name = Config.site_name
 
 const menu_links = [
     {
@@ -21,7 +22,7 @@ const menu_dialog = ref<any | null>(null)
 
 <template>
     <nav id="navbar">
-        <a id="site-name">{{ site_name }}</a>
+        <a id="site-name" href="/">{{ site_name }}</a>
 
         <div id="blog-menu-items">
             <a class="blog-menu-item" v-for="link in menu_links" :key="link.name" :href="link.link">
