@@ -2,7 +2,7 @@
     <div class="article-card">
         <div class="article-image">
             <a :href="props.article.link">
-                <NuxtImg :src="article.image" :alt="article.title" placeholder placeholder-class="img-load"  />
+                <NuxtImg :src="article.image" :alt="article.title" placeholder placeholder-class="img-load" loading="lazy" />
             </a>
         </div>
         <div class="article-info">
