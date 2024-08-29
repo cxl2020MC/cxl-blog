@@ -2,7 +2,8 @@
     <div class="article-card">
         <div class="article-image">
             <a :href="props.article.link">
-                <NuxtImg :src="article.image" :alt="article.title" placeholder placeholder-class="img-load" loading="lazy" />
+                <NuxtImg :src="article.image" :alt="article.title" placeholder placeholder-class="img-loading"
+                    loading="lazy" />
             </a>
         </div>
         <div class="article-info">
@@ -83,5 +84,24 @@ const props = defineProps<{
 .article-info p {
     margin: 0.5rem 0;
     font-size: 1rem;
+}
+
+img.image-load {
+    overflow: hidden;
+}
+
+img.image-load::after {
+    content: '';
+    position: absolute;
+    inset: -20%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 60%);
+    animation: shark-wrap 2s infinite;
+    transform: translateX(-100%);
+}
+
+@keyframes shark-wrap {
+    to {
+        transform: translateX(100%);
+    }
 }
 </style>
