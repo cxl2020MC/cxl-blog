@@ -31,6 +31,9 @@ interface site_config {
      * 例如：http://localhost:3000/api
      */
     api_url: string;
+    
+
+    image_domains: string[];
 } 
 
 interface author_config {

@@ -24,9 +24,14 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      ...BlogConfig,
+      api_url: BlogConfig.api_url,
       BuildTime: new Date().toLocaleString("zh-CN", { timeZone: "Asia/Shanghai"}),
     }
+  },
+
+  image: {
+    // domains: BlogConfig.image_domains,
+    format: ['avif', 'webp'],
   },
 
   modules: ['@nuxt/icon', '@nuxtjs/seo', '@nuxt/image']
