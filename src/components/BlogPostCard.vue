@@ -94,14 +94,20 @@ img.image-load::after {
     content: '';
     position: absolute;
     inset: -20%;
-    background: linear-gradient(45deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 60%);
-    animation: shark-wrap 2s infinite;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 800px 104px;
+    animation: shimmer 2s infinite;
     transform: translateX(-100%);
 }
 
-@keyframes shark-wrap {
-    to {
-        transform: translateX(100%);
+@keyframes shimmer {
+    0% {
+        background-position: -100% 0;
+    }
+
+    100% {
+        background-position: 100% 0;
     }
 }
 </style>
