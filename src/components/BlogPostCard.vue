@@ -10,7 +10,7 @@
                 <h3>{{ props.article.title }}</h3>
             </a>
             <p>{{ props.article.description }}</p>
-
+            <p></p>
         </div>
     </div>
 </template>
