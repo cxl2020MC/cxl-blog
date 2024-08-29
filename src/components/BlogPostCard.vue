@@ -10,6 +10,7 @@
                 <h3>{{ props.article.title }}</h3>
             </a>
             <p>{{ props.article.description }}</p>
+
         </div>
     </div>
 </template>
@@ -31,6 +32,11 @@ const props = defineProps<{
     border: var(--card-border);
     border-radius: var(--card-border-radius);
     background: var(--card-bg);
+    transition: border .3s ease-in-out;
+}
+
+.article-card:hover {
+    border: var(--card-border-hover)
 }
 
 .article-card:hover .article-image img {

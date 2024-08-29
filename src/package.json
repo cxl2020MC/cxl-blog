@@ -10,8 +10,9 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxtjs/seo": "^2.0.0-rc.19",
     "@nuxt/icon": "^1.4.10",
+    "@nuxt/image": "^1.7.1",
+    "@nuxtjs/seo": "^2.0.0-rc.19",
     "nuxt": "^3.13.0",
     "vue": "latest"
   },
