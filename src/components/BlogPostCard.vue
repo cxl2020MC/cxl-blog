@@ -85,7 +85,7 @@ const props = defineProps<{
     font-size: 1rem;
 }
 
-img.image-load {
+img.img-load {
     background: #f6f7f8;
     background: linear-gradient(
         100deg,
