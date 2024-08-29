@@ -17,7 +17,6 @@
 </template>
 
 <script setup lang="ts">
-import { NuxtImg } from '#build/components';
 import type { Article } from '~/types/article'
 const props = defineProps<{
     article: Article
@@ -96,9 +95,8 @@ img.image-load::after {
     inset: -20%;
     background: #f6f7f8;
     background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
-    background-size: 800px 104px;
+    background-size: 200% 100%;
     animation: shimmer 2s infinite;
-    transform: translateX(-100%);
 }
 
 @keyframes shimmer {
