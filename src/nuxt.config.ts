@@ -39,10 +39,5 @@ export default defineNuxtConfig({
     defaultLocale: BlogConfig.language,
   },
 
-  image: {
-    domains: BlogConfig.image_domains,
-    format: ["avif", "webp"],
-  },
-
   modules: ["@nuxt/icon", "@nuxtjs/seo"],
 });
