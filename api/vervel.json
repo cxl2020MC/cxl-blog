@@ -6,11 +6,10 @@
             "use": "@vercel/python"
         }
     ],
-    "outputDirectory": ".",
 
     "rewrites": [
         {
-            "source": "(.*)",
+            "source": "/(.*)",
             "destination": "api/app.py"
         }
     ]
