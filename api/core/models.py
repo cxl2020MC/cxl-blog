@@ -6,10 +6,14 @@ class User(BaseModel):
     email: str
     hashed_password: str
 
-class Posts(BaseModel):
+class Post(BaseModel):
     _id: str | None = None
     title: str
+    abbrlink: str
+    author: str
     content: str
-    published: bool = True
-    # rating: Optional[int] = None
-
+    tags: list[str]
+    created_at: str
+    updated_at: str
+    draft: bool = False
+    word_count: int
