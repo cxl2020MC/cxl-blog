@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from .core import main
+from core import main
 
 app = FastAPI()
 
