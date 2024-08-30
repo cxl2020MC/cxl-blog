@@ -1,9 +1,12 @@
 {
-    "buildCommand": "pip install -r requirements.txt",
+    "builds": [
+        {
+            "src": "app.py",
+            "use": "@vercel/python"
+        },
+    ],
     "outputDirectory": ".",
-    "functions": {
-        "/app.py": {}
-    },
+
     "rewrites": [
         {
             "source": "(.*)",
