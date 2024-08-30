@@ -13,7 +13,7 @@ class Post(BaseModel):
     author: str
     content: str
     tags: list[str]
-    created_at: str
-    updated_at: str
+    created_at: float
+    updated_at: float
     draft: bool = False
     word_count: int
