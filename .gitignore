@@ -22,9 +22,3 @@ logs
 .env
 .env.*
 !.env.example
-
-# VS Code
-.vscode
-
-# Python
-__pycache__
