@@ -44,5 +44,5 @@ export default defineNuxtConfig({
     format: ["avif", "webp"],
   },
 
-  modules: ["@nuxt/icon", "@nuxtjs/seo", "@nuxt/image"],
+  modules: ["@nuxt/icon", "@nuxtjs/seo"],
 });
