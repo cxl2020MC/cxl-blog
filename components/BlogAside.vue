@@ -1,14 +1,12 @@
 <template>
 <div class="blog-aside">
-    <div class="log-aside_author">
-        <h3 class="blog-aside__title">作者</h3>
-        <div class="blog-aside__author">
+    <div class="blog-aside_author">
+        <h3 class="blog-aside_author-title">作者</h3>
             <img src="" alt="">
             <div class="blog-aside__author-info">
                 <h4 class="blog-aside__author-name">作者名字</h4>
                 <p class="blog-aside__author-desc">作者简介</p>
             </div>
-        </div>
     </div>
     <div class="blog-aside__item">
         <h3 class="blog-aside__title">热门文章</h3>
