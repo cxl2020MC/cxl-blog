@@ -3,7 +3,8 @@
 </script>
 
 <template>
-    <BlogHeader></BlogHeader>
+    <NuxtLoadingIndicator />
+    <BlogHeader />
     <div class="main">
         <slot />
     </div>
