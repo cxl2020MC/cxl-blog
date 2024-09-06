@@ -1,15 +1,15 @@
 <template>
     <div class="article-card">
         <div class="article-image">
-            <a :href="props.article.link">
+            <a :href="article.link">
                 <img :src="article.image" :alt="article.title" loading="lazy" />
             </a>
         </div>
         <div class="article-info">
-            <a :href="props.article.link">
-                <h3>{{ props.article.title }}</h3>
+            <a :href="article.link">
+                <h3>{{ article.title }}</h3>
             </a>
-            <p>{{ props.article.description }}</p>
+            <p>{{ article.description }}</p>
             <p></p>
         </div>
     </div>
@@ -17,7 +17,8 @@
 
 <script setup lang="ts">
 import type { Article } from '~/types/article'
-const props = defineProps<{
+
+defineProps<{
     article: Article
 }>()
 
