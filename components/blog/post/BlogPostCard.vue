@@ -2,7 +2,7 @@
     <div class="article-card">
         <div class="article-image">
             <a :href="article.link">
-                <img :src="article.image" :alt="article.title" loading="lazy" />
+                <img :src="article.cover" :alt="article.title" loading="lazy" />
             </a>
         </div>
         <div class="article-info">

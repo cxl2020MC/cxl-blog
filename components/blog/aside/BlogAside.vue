@@ -1,5 +1,5 @@
 <template>
-    <div class="aside">
+    <aside class="aside">
         <BlogAsideAuthor :author="author" />
         <div class="aside-item">
             <h3 class="aside-title">热门文章</h3>
@@ -9,7 +9,7 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </aside>
 </template>
 
 <script setup lang="ts">
