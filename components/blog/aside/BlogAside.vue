@@ -20,3 +20,38 @@ const author = {
     socials: []
 }
 </script>
+
+<style scoped>
+.aside {
+    padding: 1em;
+}
+
+.aside-item {
+    margin-top: 20px;
+}
+
+.aside-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.aside-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aside-list-item {
+    margin-bottom: 10px;
+}
+
+.aside-list-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.aside-list-item a:hover {
+    color: #ff6600;
+}
+</style>
