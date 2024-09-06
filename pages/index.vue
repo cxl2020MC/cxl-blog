@@ -24,7 +24,7 @@ console.log(articles.value)
 <template>
     <div id="post-list">
         <template v-if="articles">
-            <BlogPostCard v-for="article in articles.data" :article="article"/>
+            <BlogPostCard v-for="article in articles.data" :key="article.id" :article="article" />
         </template>
     </div>
 </template>
