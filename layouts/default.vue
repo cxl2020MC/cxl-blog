@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <NuxtLoadingIndicator />
+    <NuxtLoadingIndicator color="var(--theme-color)" />
     <BlogHeader />
     <div class="main">
         <slot />

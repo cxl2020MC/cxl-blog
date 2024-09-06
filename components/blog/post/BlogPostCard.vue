@@ -26,9 +26,11 @@ const props = defineProps<{
 <style scoped>
 .article-card {
     display: flex;
+    /* flex-wrap: wrap; */
     align-items: center;
     width: 100%;
     height: 15em;
+    overflow: hidden;
     border: var(--card-border);
     border-radius: var(--card-border-radius);
     background: var(--card-bg);
@@ -47,19 +49,18 @@ const props = defineProps<{
     width: 40%;
     height: 100%;
     overflow: hidden;
-    border-radius: var(--card-border-radius);
 }
 
-.article-card img {
+.article-card .article-image img {
     height: 100%;
     width: 100%;
-    border-radius: var(--card-border-radius);
     object-position: center;
     object-fit: cover;
     transition: .3s ease-in-out;
 }
 
 .article-info {
+    flex: 1 0 20em;
     padding: 1em;
     margin-bottom: auto;
 }
@@ -83,25 +84,4 @@ const props = defineProps<{
     margin: 0.5rem 0;
     font-size: 1rem;
 }
-
-/* img.img-loading {
-    background: linear-gradient(
-        100deg,
-        rgba(100, 100,100, 0.2),
-        rgba(255, 255, 255, 0.5),
-        rgba(100, 100, 100, 0.2)
-    );
-    background-size: 200% 100%;
-    animation: shimmer 2s infinite ease-in-out;
-}
-
-@keyframes shimmer {
-    0% {
-        background-position-x: 100%;
-    }
-
-    100% {
-        background-position-x: -100%;
-    }
-} */
 </style>
