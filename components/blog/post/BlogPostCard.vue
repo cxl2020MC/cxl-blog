@@ -27,8 +27,6 @@ defineProps<{
 <style scoped>
 .article-card {
     display: flex;
-    /* flex-wrap: wrap; */
-    align-items: center;
     width: 100%;
     height: 15em;
     overflow: hidden;
@@ -61,9 +59,8 @@ defineProps<{
 }
 
 .article-info {
-    flex: 1 0 20em;
     padding: 1em;
-    margin-bottom: auto;
+    /* margin-bottom: auto; */
 }
 
 .article-info a {
