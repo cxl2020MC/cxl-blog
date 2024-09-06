@@ -19,15 +19,6 @@ const articles = req.data
 
 console.log(articles.value)
 
-// const articles:Array<Article> = await useFetch(`${api_url}/api/getArticles`)
-
-
-// const article = {
-//         title: "原生启动",
-//         description: "114514",
-//         image: "/img/68a24fdabc5f07601f73b1397a4d3a4a.avif",
-//         link: "ys",
-//     }
 </script>
 
 <template>
