@@ -22,6 +22,5 @@ footer {
     justify-content: center;
     background-color: var(--card-bg);
     padding: 1em;
-    margin-top: auto;
 }
 </style>
