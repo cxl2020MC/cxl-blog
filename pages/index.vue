@@ -1,16 +1,30 @@
 <script setup lang="ts">
-const article = {
-        title: "原生启动",
-        description: "114514",
-        image: "/img/68a24fdabc5f07601f73b1397a4d3a4a.avif",
-        link: "ys",
-    }
+import type { Article } from '~/types/article';
+
+useHead({
+    title: "主页",
+    meta: [
+        {
+            name: "description",
+            content: "主页",
+        },
+    ],
+})
+
+const api_url = useRuntimeConfig().public.api_url
+const req = await useFetch<{
+    data: Array<Article>
+}>(`${api_url}/postlist`)
+const articles = req.data
+
+console.log(articles.value)
+
 </script>
 
 <template>
     <div id="post-list">
-        <template v-for="item in 3" :key="item">
-            <BlogPostCard :article="article"/>
+        <template v-if="articles">
+            <BlogPostCard v-for="article in articles.data" :key="article.id" :article="article" />
         </template>
     </div>
     <BlogAside />

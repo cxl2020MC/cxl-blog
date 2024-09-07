@@ -9,7 +9,7 @@ interface Article {
     id?: number;
     title: string;
     description: string;
-    image: string;
+    cover: string;
     link: string;
     createdAt?: string;
     updatedAt?: string;

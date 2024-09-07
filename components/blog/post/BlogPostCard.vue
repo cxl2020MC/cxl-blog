@@ -1,15 +1,15 @@
 <template>
     <div class="article-card">
         <div class="article-image">
-            <a :href="props.article.link">
-                <img :src="props.article.image" :alt="props.article.title" loading="lazy" />
+            <a :href="article.link">
+                <img :src="article.cover" :alt="article.title" loading="lazy" />
             </a>
         </div>
         <div class="article-info">
-            <a :href="props.article.link">
-                <h3>{{ props.article.title }}</h3>
+            <a :href="article.link">
+                <h3>{{ article.title }}</h3>
             </a>
-            <p>{{ props.article.description }}</p>
+            <p>{{ article.description }}</p>
             <p></p>
         </div>
     </div>
@@ -17,7 +17,8 @@
 
 <script setup lang="ts">
 import type { Article } from '~/types/article'
-const props = defineProps<{
+
+defineProps<{
     article: Article
 }>()
 
@@ -26,9 +27,9 @@ const props = defineProps<{
 <style scoped>
 .article-card {
     display: flex;
-    align-items: center;
     width: 100%;
     height: 15em;
+    overflow: hidden;
     border: var(--card-border);
     border-radius: var(--card-border-radius);
     background: var(--card-bg);
@@ -47,13 +48,11 @@ const props = defineProps<{
     width: 40%;
     height: 100%;
     overflow: hidden;
-    border-radius: var(--card-border-radius);
 }
 
-.article-card img {
+.article-card .article-image img {
     height: 100%;
     width: 100%;
-    border-radius: var(--card-border-radius);
     object-position: center;
     object-fit: cover;
     transition: .3s ease-in-out;
@@ -61,7 +60,7 @@ const props = defineProps<{
 
 .article-info {
     padding: 1em;
-    margin-bottom: auto;
+    /* margin-bottom: auto; */
 }
 
 .article-info a {
@@ -83,25 +82,4 @@ const props = defineProps<{
     margin: 0.5rem 0;
     font-size: 1rem;
 }
-
-/* img.img-loading {
-    background: linear-gradient(
-        100deg,
-        rgba(100, 100,100, 0.2),
-        rgba(255, 255, 255, 0.5),
-        rgba(100, 100, 100, 0.2)
-    );
-    background-size: 200% 100%;
-    animation: shimmer 2s infinite ease-in-out;
-}
-
-@keyframes shimmer {
-    0% {
-        background-position-x: 100%;
-    }
-
-    100% {
-        background-position-x: -100%;
-    }
-} */
 </style>
