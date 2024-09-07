@@ -27,6 +27,7 @@ import BlogPostList from '~/components/blog/post/BlogPostList.vue';
 @media (min-width: 50em) {
     .post-list{
         max-width: 75em;
+        justify-self: center;
     }
     .aside {
         max-width: 20em;
