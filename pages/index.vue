@@ -22,6 +22,5 @@ import BlogPostList from '~/components/blog/post/BlogPostList.vue';
 
 .aside {
     flex: 1 1 10em;
-    max-width: 15em;
 }
 </style>
