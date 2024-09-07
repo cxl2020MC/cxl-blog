@@ -34,8 +34,8 @@ defineProps<{
 }>()
 
 function formatDate(date: string) {
-    const dateObj = new Date(date)
-    return moment(dateObj).format("YYYY-MM-DD")
+    // const dateObj = new Date(date)
+    return moment(date).format("YYYY-MM-DD")
 }
 
 </script>
