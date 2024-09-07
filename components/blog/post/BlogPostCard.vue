@@ -26,6 +26,7 @@
 </template>
 
 <script setup lang="ts">
+import moment from 'moment'
 import type { Article } from '~/types/article'
 
 defineProps<{
@@ -33,10 +34,8 @@ defineProps<{
 }>()
 
 function formatDate(date: string) {
-    return new Date(date).toLocaleDateString('zh-CN', {
-        timeZone: 'Asia/Shanghai',
-        
-    })
+    const dateObj = new Date(date)
+    return moment(dateObj).format("YYYY-MM-DD")
 }
 
 </script>

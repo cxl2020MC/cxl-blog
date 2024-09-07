@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxt/icon": "^1.4.10",
     "@nuxtjs/seo": "^2.0.0-rc.19",
+    "moment": "^2.30.1",
     "nuxt": "^3.13.0",
     "vue": "latest"
   },
