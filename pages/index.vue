@@ -24,7 +24,7 @@ import BlogPostList from '~/components/blog/post/BlogPostList.vue';
     flex: 1 1 10em;
 }
     
-@media (max-width: 50em) {
+@media (min-width: 50em) {
     .aside {
         max-width: 20em;
     }
