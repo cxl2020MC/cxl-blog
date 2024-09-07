@@ -1,5 +1,5 @@
 <template>
-    <div id="post-list">
+    <div class="post-list">
         <template v-if="articles">
             <BlogPostCard v-for="article in articles.data" :key="article.id" :article="article" />
         </template>
@@ -20,9 +20,10 @@ console.log(articles.value)
 </script>
 
 <style scoped>
-#post-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+.post-list {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
 }
 </style>

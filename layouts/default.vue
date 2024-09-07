@@ -5,9 +5,8 @@
 <template>
     <NuxtLoadingIndicator color="var(--theme-color)" />
     <BlogHeader />
-    <div class="main">
-        <slot />
-    </div>
+    <slot />
+    <BlogFooter />
 </template>
 
 <style>
