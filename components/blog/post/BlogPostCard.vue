@@ -11,8 +11,15 @@
             </a>
             <p>{{ article.description }}</p>
             <div class="article-meta">
-                <span>{{ formatDate(article.created_at) }}</span>
-                <span>{{ formatDate(article.updated_at) }}</span>
+                <span>
+                    <Icon name="fa6-solid:calendar-days" /> {{ formatDate(article.created_at) }}
+                </span>
+                <span>
+                    <Icon name="fa6-solid:clock" /> {{ formatDate(article.updated_at) }}
+                </span>
+                <span v-if="article.tags?.length">
+                    <Icon name="fa6-solid:tags" /> {{ article.tags.join(', ')}}
+                </span>
             </div>
         </div>
     </div>
@@ -28,6 +35,7 @@ defineProps<{
 function formatDate(date: string) {
     return new Date(date).toLocaleDateString('zh-CN', {
         timeZone: 'Asia/Shanghai',
+        
     })
 }
 
@@ -96,7 +104,11 @@ function formatDate(date: string) {
     display: flex;
     justify-content: space-between;
     gap: 0.5em;
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
     /* color: var(--text-color-secondary); */
+}
+
+.article-meta span {
+    align-content: center;
 }
 </style>
