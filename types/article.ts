@@ -11,8 +11,8 @@ interface Article {
     description: string;
     cover: string;
     link: string;
-    created_at: string;
-    updated_at: string;
+    created_at: number;
+    updated_at: number;
     tags?: Tags[];
     post_icon?: string;
 }
