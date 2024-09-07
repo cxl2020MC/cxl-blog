@@ -1,6 +1,6 @@
 <template>
     <div class="aside-author">
-        <img class="aside-author__avatar" :src="author.avatar" alt="avator">
+        <img class="aside-author__avatar" :src="author.avatar" alt="avatar">
         <div class="aside-author__info">
             <div class="aside-author__info-status">
 
@@ -35,3 +35,16 @@ defineProps<{
 }>()
 
 </script>
+
+<style lang="css" scoped>
+.aside-author {
+    display: flex;
+    flex-direction: column;
+}
+.aside-author__avatar {
+    width: 30%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    align-self: center;
+}
+</style>

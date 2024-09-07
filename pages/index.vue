@@ -27,6 +27,7 @@ console.log(articles.value)
             <BlogPostCard v-for="article in articles.data" :key="article.id" :article="article" />
         </template>
     </div>
+    <BlogAside />
 </template>
 
 <style scoped>

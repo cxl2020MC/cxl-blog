@@ -1,6 +1,6 @@
 <template>
     <aside class="aside">
-        <BlogAsideAuthor :author="author" />
+        <BlogAsideAuthor class="aside-item" :author="author" />
         <div class="aside-item">
             <h3 class="aside-title">热门文章</h3>
             <ul class="aside-list">
@@ -15,7 +15,7 @@
 <script setup lang="ts">
 const author = {
     name: '陈鑫磊',
-    avatar: 'https://cdn.jsdelivr.net/gh/itclanCoder/blog_img_store@main/img/20210722143447.2g3x6xq8z3o0.jpg',
+    avatar: 'https://public.img.cxl2020mc.top/avatar.png',
     description: '。。。',
     socials: []
 }
@@ -23,11 +23,14 @@ const author = {
 
 <style scoped>
 .aside {
-    padding: 1em;
+
 }
 
 .aside-item {
-    margin-top: 20px;
+    margin: 1em;
+    padding: 1em;
+    background: var(--card-bg);
+    border-radius: var(--card-border-radius)
 }
 
 .aside-title {
