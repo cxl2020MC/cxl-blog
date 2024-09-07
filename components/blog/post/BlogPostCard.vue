@@ -10,7 +10,10 @@
                 <h3>{{ article.title }}</h3>
             </a>
             <p>{{ article.description }}</p>
-            <p></p>
+            <div class="article-meta">
+                <span>{{ formatDate(article.created_at) }}</span>
+                <span>{{ formatDate(article.updated_at) }}</span>
+            </div>
         </div>
     </div>
 </template>
@@ -21,6 +24,12 @@ import type { Article } from '~/types/article'
 defineProps<{
     article: Article
 }>()
+
+function formatDate(date: string) {
+    return new Date(date).toLocaleDateString('zh-CN', {
+        timeZone: 'Asia/Shanghai',
+    })
+}
 
 </script>
 
@@ -81,5 +90,13 @@ defineProps<{
 .article-info p {
     margin: 0.5rem 0;
     font-size: 1rem;
+}
+
+.article-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5em;
+    font-size: 0.8rem;
+    /* color: var(--text-color-secondary); */
 }
 </style>

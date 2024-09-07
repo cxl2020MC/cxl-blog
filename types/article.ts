@@ -6,13 +6,13 @@ interface Tags {
 }
 
 interface Article {
-    id?: number;
+    _id?: number;
     title: string;
     description: string;
     cover: string;
     link: string;
-    createdAt?: string;
-    updatedAt?: string;
+    created_at: string;
+    updated_at: string;
     tags?: Tags[];
     post_icon?: string;
 }

@@ -19,7 +19,8 @@ body {
 }
 
 [data-theme="light"] {
-    --bg-color: #f9f4dc;
+    /* --bg-color: #f9f4dc; */
+    --bg-color: #fffbf0;
     --card-bg: #fff;
     --text-color: #333;
     --text-color-light: #fff;
