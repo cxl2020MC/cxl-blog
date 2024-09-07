@@ -17,10 +17,10 @@ import BlogPostList from '~/components/blog/post/BlogPostList.vue';
 }
 
 .post-list {
-    flex: 1 1 20em;
+    flex: 1 1 30em;
 }
 
 .aside {
-    flex: 1 1 10em;
+    flex: 1 1 7em;
 }
 </style>
