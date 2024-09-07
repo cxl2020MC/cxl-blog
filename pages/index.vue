@@ -9,10 +9,11 @@ const article = {
 
 <template>
     <div id="post-list">
-        <template v-for="item in 20" :key="item">
+        <template v-for="item in 3" :key="item">
             <BlogPostCard :article="article"/>
         </template>
     </div>
+    <BlogAside />
 </template>
 
 <style scoped>
