@@ -26,9 +26,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       api_url: BlogConfig.api_url,
-      BuildTime: new Date().toLocaleString("zh-CN", {
-        timeZone: "Asia/Shanghai",
-      }),
+      BuildTime: new Date(),
     },
   },
 

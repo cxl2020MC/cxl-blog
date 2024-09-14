@@ -44,7 +44,7 @@ function formatDate(date: number) {
 .article-card {
     display: flex;
     width: 100%;
-    height: 15em;
+    /* height: 15em; */
     overflow: hidden;
     border: var(--card-border);
     border-radius: var(--card-border-radius);
@@ -66,13 +66,13 @@ function formatDate(date: number) {
     overflow: hidden;
 }
 
-@media (min-width: 20em) {
+@media (max-width: 50em) {
     .article-card {
         flex-direction: column;
     }
     .article-card .article-image {
         width: 100%;
-        height: 5em;
+        height: 10em;
     }
 }
 
