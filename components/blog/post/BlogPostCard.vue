@@ -109,9 +109,10 @@ function formatDate(date: number) {
 }
 
 .article-meta {
-    display: flex;
+    /* display: flex;
     justify-content: start;
-    gap: 0.5em;
+    gap: 0.5em; */
+    display: inline;
     font-size: 0.8em;
     color: var(--text-color-secondary);
 }
@@ -119,5 +120,6 @@ function formatDate(date: number) {
 .article-meta span {
     /* align-content: center; */
     text-align: center;
+    margin-right: 0.5em;
 }
 </style>
