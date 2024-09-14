@@ -66,6 +66,16 @@ function formatDate(date: number) {
     overflow: hidden;
 }
 
+@media (min-width: 20em) {
+    .article-card {
+        flex-direction: column;
+    }
+    .article-card .article-image {
+        width: 100%;
+        height: 5em;
+    }
+}
+
 .article-card .article-image img {
     height: 100%;
     width: 100%;
@@ -76,7 +86,6 @@ function formatDate(date: number) {
 
 .article-info {
     padding: 1em;
-    /* margin-bottom: auto; */
 }
 
 .article-info a {
