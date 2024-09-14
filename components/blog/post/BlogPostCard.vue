@@ -112,8 +112,8 @@ function formatDate(date: number) {
     display: flex;
     justify-content: space-between;
     gap: 0.5em;
-    /* font-size: 0.8rem; */
-    /* color: var(--text-color-secondary); */
+    font-size: 0.8em;
+    color: var(--text-color-secondary);
 }
 
 .article-meta span {

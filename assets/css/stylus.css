@@ -23,6 +23,7 @@ body {
     --bg-color: #fffbf0;
     --card-bg: #fff;
     --text-color: #333;
+    --text-color-secondary: #666;
     --text-color-light: #fff;
     --theme-color: var(--theme-color-blue);
     --theme-color-red: #ef6f48;
