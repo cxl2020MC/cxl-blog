@@ -30,6 +30,7 @@ const author = {
     margin: 1em;
     padding: 1em;
     background: var(--card-bg);
+    border: var(--card-border);
     border-radius: var(--card-border-radius)
 }
 
