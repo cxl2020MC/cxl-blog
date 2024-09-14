@@ -37,5 +37,5 @@ export default defineNuxtConfig({
     defaultLocale: BlogConfig.language,
   },
 
-  modules: ["@nuxt/icon", "@nuxtjs/seo"],
+  modules: ["@nuxt/icon", "@nuxtjs/seo", "@nuxtjs/color-mode"],
 });
