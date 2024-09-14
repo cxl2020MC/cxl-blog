@@ -62,7 +62,6 @@ function formatDate(date: number) {
 
 .article-card .article-image {
     width: 40%;
-    height: 100%;
     overflow: hidden;
 }
 
