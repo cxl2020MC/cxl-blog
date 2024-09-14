@@ -110,13 +110,14 @@ function formatDate(date: number) {
 
 .article-meta {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     gap: 0.5em;
     font-size: 0.8em;
     color: var(--text-color-secondary);
 }
 
 .article-meta span {
-    align-content: center;
+    /* align-content: center; */
+    text-align: center;
 }
 </style>
