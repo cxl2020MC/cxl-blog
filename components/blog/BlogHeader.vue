@@ -151,7 +151,4 @@ const menu_dialog = ref<any | null>(null)
     text-decoration: none
 }
 
-#menu .menu-icon {
-    margin-right: 0.5em;
-}
 </style>
