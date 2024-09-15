@@ -31,7 +31,8 @@ const author = {
     padding: 1em;
     background: var(--card-bg);
     border: var(--card-border);
-    border-radius: var(--card-border-radius)
+    border-radius: var(--card-border-radius);
+    transition: border 0.3s ease-in-out;
 }
 
 .aside-item:hover {
