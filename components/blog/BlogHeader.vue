@@ -108,7 +108,7 @@ const menu_dialog = ref<any | null>(null)
     border: none;
     border-radius: 0.5em;
     cursor: pointer;
-    gap: 0.1em;
+    gap: 0.5em;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -119,7 +119,7 @@ const menu_dialog = ref<any | null>(null)
 #menu-buttons {
     display: flex;
     align-items: center;
-    gap: 0.5em;
+    gap: 0.1em;
 }
 
 .menu-button {
