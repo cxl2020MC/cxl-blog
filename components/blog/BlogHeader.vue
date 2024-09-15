@@ -79,7 +79,7 @@ const menu_dialog = ref<any | null>(null)
     height: 3rem;
     align-items: center;
     display: flex;
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: bold;
     color: #333;
 }
