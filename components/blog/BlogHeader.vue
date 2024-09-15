@@ -126,7 +126,7 @@ const menu_dialog = ref<any | null>(null)
     display: flex;
     align-items: center;
     padding: 0.5em;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     background: none;
     border: none;
     border-radius: 10px;
