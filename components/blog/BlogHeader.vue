@@ -106,9 +106,9 @@ const menu_dialog = ref<any | null>(null)
     padding: 0.5em;
     background: none;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.5em;
     cursor: pointer;
-    gap: 0.5em;
+    gap: 0.1em;
     transition: background-color 0.3s ease-in-out;
 }
 
