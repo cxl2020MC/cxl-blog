@@ -3,7 +3,7 @@
         <img class="aside-author__avatar" :src="author.avatar" alt="avatar">
         <div class="aside-author__info">
             <div class="aside-author__info-status">
-
+                <Icon name="fa6-solid:circle" />
                 <span>在线</span>
             </div>
             <h4 class="aside-author__name">{{ author.name }}</h4>
