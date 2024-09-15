@@ -34,6 +34,9 @@ const menu_dialog = ref<any | null>(null)
             <button class="menu-button">
                 <icon name="fa6-brands:github" class="menu-icon"></icon>
             </button>
+            <button class="menu-button">
+                <icon name="fa6-solid:circle-half-stroke" class="menu-icon"></icon>
+            </button>
             <button class="menu-button" id="menu-buttom" @click="menu_dialog?.open()">
                 <icon name="fa6-solid:bars" class="menu-icon"></icon>
             </button>
