@@ -34,6 +34,10 @@ const author = {
     border-radius: var(--card-border-radius)
 }
 
+.aside-item:hover {
+    border: var(--card-border-hover);
+}
+
 .aside-title {
     font-size: 18px;
     font-weight: 600;
