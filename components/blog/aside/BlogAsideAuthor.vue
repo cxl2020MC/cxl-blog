@@ -3,7 +3,7 @@
         <img class="aside-author__avatar" :src="author.avatar" alt="avatar">
         <div class="aside-author__info">
             <div class="aside-author__info-status">
-                <Icon name="fa6-solid:circle" />
+                <Icon class="online" name="fa6-solid:circle" />
                 <span>在线</span>
             </div>
             <h4 class="aside-author__name">{{ author.name }}</h4>
@@ -41,10 +41,15 @@ defineProps<{
     display: flex;
     flex-direction: column;
 }
+
 .aside-author__avatar {
     width: 30%;
     border-radius: 50%;
     aspect-ratio: 1/1;
     align-self: center;
+}
+
+.online {
+    color: #00ff00;
 }
 </style>
