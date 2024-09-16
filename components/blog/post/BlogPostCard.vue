@@ -14,10 +14,10 @@
                 <div class="article-meta">
                     <Icon name="fa6-solid:calendar-days" /> {{ formatDate(article.created_at) }}
                 </div>
-                <div class="article-metas">
+                <div class="article-meta">
                     <Icon name="fa6-solid:clock" /> {{ formatDate(article.updated_at) }}
                 </div>
-                <div  class="article-metas" v-if="article.tags?.length">
+                <div  class="article-meta" v-if="article.tags?.length">
                     <Icon name="fa6-solid:tags" /> {{ article.tags.join(', ') }}
                 </div>
             </div>
