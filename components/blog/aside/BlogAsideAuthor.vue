@@ -41,14 +41,13 @@ defineProps<{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
 }
 
 .aside-author__avatar {
     width: 30%;
     border-radius: 50%;
     aspect-ratio: 1/1;
-    align-self: center;
+    /* align-self: center; */
 }
 
 .aside-author__info-status {
@@ -67,4 +66,6 @@ defineProps<{
 .online {
     color: #00ff00;
 }
+
+
 </style>
