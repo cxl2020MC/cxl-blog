@@ -55,10 +55,10 @@ defineProps<{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0.5em;
+    margin: 1em;
     padding: 0.5em;
-    font-size: 0.5em;
-    gap: 0.3em;
+    font-size: 0.8em;
+    gap: 0.8em;
     border-radius: 999em;
     background: var(--text-color);
     color: var(--text-color-light)
