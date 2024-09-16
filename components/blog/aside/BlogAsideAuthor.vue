@@ -4,7 +4,7 @@
         <div class="aside-author__info">
             <div class="aside-author__info-status">
                 <Icon class="online" name="fa6-solid:circle" />
-                <span>在线</span>
+                <span>正在使用 VS Code</span>
             </div>
             <h4 class="aside-author__name">{{ author.name }}</h4>
             <p class="aside-author__desc">{{ author.description }}</p>
@@ -49,6 +49,19 @@ defineProps<{
     border-radius: 50%;
     aspect-ratio: 1/1;
     align-self: center;
+}
+
+.aside-author__info-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5em;
+    padding: 0.5em;
+    font-size: 0.5em;
+    gap: 0.3em;
+    border-radius: 999em;
+    background: var(--text-color);
+    color: var(--text-color-light)
 }
 
 .online {
