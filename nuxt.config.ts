@@ -46,8 +46,8 @@ export default defineNuxtConfig({
     classPrefix: '',
     classSuffix: '-mode',
     storage: 'localStorage', // or 'sessionStorage' or 'cookie'
-    storageKey: 'nuxt-color-mode'
-  }
+    storageKey: 'nuxt-color-mode',
+  },
 
   modules: ["@nuxt/icon", "@nuxtjs/seo", "@nuxtjs/color-mode"],
 });
