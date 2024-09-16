@@ -13,7 +13,7 @@
             <div class="article-metas">
                 <div class="article-meta">
                     <Icon name="fa6-solid:calendar-days" />
-                    发布于：{{ formatDate(article.created_at) }}
+                    发布于：{{ formatDate(article.created_at) }} |
                 </div>
                 <div class="article-meta">
                     <Icon name="fa6-solid:clock" />
