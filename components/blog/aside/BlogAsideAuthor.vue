@@ -40,6 +40,7 @@ defineProps<{
 .aside-author {
     display: flex;
     flex-direction: column;
+    align-content: center;
 }
 
 .aside-author__avatar {
