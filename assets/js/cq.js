@@ -38,7 +38,7 @@ async function cxl_cart_loader() {
             div.innerHTML = div_html
             break
         }
-    }
+    } //)
 }
 
 
