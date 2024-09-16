@@ -14,12 +14,12 @@
                 <div class="article-meta">
                     <Icon name="fa6-solid:calendar-days" /> {{ formatDate(article.created_at) }}
                 </div>
-                <div>
+                <div class="article-metas">
                     <Icon name="fa6-solid:clock" /> {{ formatDate(article.updated_at) }}
                 </div>
-                <span v-if="article.tags?.length">
-                    <Icon name="fa6-solid:tags" /> {{ article.tags.join(', ')}}
-                </span>
+                <div  class="article-metas" v-if="article.tags?.length">
+                    <Icon name="fa6-solid:tags" /> {{ article.tags.join(', ') }}
+                </div>
             </div>
         </div>
     </div>
@@ -70,6 +70,7 @@ function formatDate(date: number) {
         height: auto;
         flex-direction: column;
     }
+
     .article-card .article-image {
         width: 100%;
         height: 10em;
