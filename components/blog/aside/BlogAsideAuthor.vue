@@ -4,7 +4,7 @@
         <div class="aside-author__info">
             <div class="aside-author__info-status">
                 <Icon class="online" name="fa6-solid:circle" />
-                <span>正在使用 VS Code</span>
+                <span>在线</span>
             </div>
             <h4 class="aside-author__name">{{ author.name }}</h4>
             <p class="aside-author__desc">{{ author.description }}</p>
