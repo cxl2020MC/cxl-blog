@@ -12,10 +12,12 @@
             <p>{{ article.description }}</p>
             <div class="article-metas">
                 <div class="article-meta">
-                    <Icon name="fa6-solid:calendar-days" /> {{ formatDate(article.created_at) }}
+                    <Icon name="fa6-solid:calendar-days" />
+                    发布于：{{ formatDate(article.created_at) }}
                 </div>
                 <div class="article-meta">
-                    <Icon name="fa6-solid:clock" /> {{ formatDate(article.updated_at) }}
+                    <Icon name="fa6-solid:clock" />
+                    更新于：{{ formatDate(article.updated_at) }}
                 </div>
                 <div  class="article-meta" v-if="article.tags?.length">
                     <Icon name="fa6-solid:tags" /> {{ article.tags.join(', ') }}
