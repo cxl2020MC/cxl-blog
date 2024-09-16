@@ -19,12 +19,14 @@ body {
 }
 
 [data-theme="light"] {
-    /* --bg-color: #f9f4dc; */
     --bg-color: #fffbf0;
     --card-bg: #fff;
+    --blur-bg: rgba(255, 255, 255, 0.8);
+
     --text-color: #333;
     --text-color-secondary: #666;
     --text-color-light: #fff;
+
     --theme-color: var(--theme-color-blue);
     --theme-color-red: #ef6f48;
     --theme-color-green: #7ba23f;

@@ -1,5 +1,18 @@
 <script setup lang="ts">
 const Config = useAppConfig()
+const colorMode = useColorMode()
+
+console.log(colorMode.preference)
+
+function toggleColorMode() {
+    if (colorMode.preference == 'system') {
+        colorMode.preference = 'light'
+    } else if (colorMode.preference == 'light') {
+        colorMode.preference = 'dark'
+    } else if (colorMode.preference == 'dark') {
+        colorMode.preference = 'system'
+    }
+}
 
 const site_name = Config.site_name
 
@@ -34,8 +47,11 @@ const menu_dialog = ref<any | null>(null)
             <button class="menu-button">
                 <icon name="fa6-brands:github" class="menu-icon"></icon>
             </button>
-            <button class="menu-button">
-                <icon name="fa6-solid:circle-half-stroke" class="menu-icon"></icon>
+            <button class="menu-button" @click="toggleColorMode">
+                <icon v-if="colorMode.preference == 'system'" name="fa6-solid:circle-half-stroke" class="menu-icon">
+                </icon>
+                <icon v-else-if="colorMode.preference == 'light'" name="fa6-solid:sun" class="menu-icon"></icon>
+                <icon v-else-if="colorMode.preference == 'dark'" name="fa6-solid:moon" class="menu-icon"></icon>
             </button>
             <button class="menu-button" id="menu-buttom" @click="menu_dialog?.open()">
                 <icon name="fa6-solid:bars" class="menu-icon"></icon>
@@ -60,28 +76,27 @@ const menu_dialog = ref<any | null>(null)
     /* width: 100%; */
     z-index: 1000;
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--blur-bg);
 
     display: flex;
-    margin: 0 auto;
-    padding: 0 1em;
+    /* margin: 0 auto; */
     justify-content: space-between;
     align-items: center;
 }
 
 #navbar a {
     align-items: center;
-    color: #333;
+    color: var(--text-color);
     text-decoration: none;
 }
 
 #site-name {
-    height: 3rem;
+    margin: 0.5em;
     align-items: center;
     display: flex;
     font-size: 1.2em;
     font-weight: bold;
-    color: #333;
+    color: var(--text-color);
 }
 
 
@@ -94,7 +109,7 @@ const menu_dialog = ref<any | null>(null)
     gap: 0.5em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 40em) {
     #menu-items {
         display: none
     }
@@ -109,11 +124,11 @@ const menu_dialog = ref<any | null>(null)
     border-radius: 0.5em;
     cursor: pointer;
     gap: 0.5em;
-    transition: background-color 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
 }
 
 .menu-item:hover {
-    background-color: rgba(0, 0, 0, 0.1)
+    background: rgba(0, 0, 0, 0.1)
 }
 
 #menu-buttons {
@@ -130,8 +145,9 @@ const menu_dialog = ref<any | null>(null)
     background: none;
     border: none;
     border-radius: 10px;
+    color: var(--text-color);
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
 }
 
 .menu-button:hover {
@@ -150,5 +166,4 @@ const menu_dialog = ref<any | null>(null)
     color: #333;
     text-decoration: none
 }
-
 </style>
