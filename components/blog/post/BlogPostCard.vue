@@ -10,13 +10,13 @@
                 <h3>{{ article.title }}</h3>
             </a>
             <p>{{ article.description }}</p>
-            <div class="article-meta">
-                <span>
+            <div class="article-metas">
+                <div class="article-meta">
                     <Icon name="fa6-solid:calendar-days" /> {{ formatDate(article.created_at) }}
-                </span>
-                <span>
+                </div>
+                <div>
                     <Icon name="fa6-solid:clock" /> {{ formatDate(article.updated_at) }}
-                </span>
+                </div>
                 <span v-if="article.tags?.length">
                     <Icon name="fa6-solid:tags" /> {{ article.tags.join(', ')}}
                 </span>
@@ -108,18 +108,18 @@ function formatDate(date: number) {
     font-size: 1rem;
 }
 
-.article-meta {
-    /* display: flex;
+.article-metas {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: start;
-    gap: 0.5em; */
-    display: inline;
+    gap: 0.5em;
     font-size: 0.8em;
     color: var(--text-color-secondary);
 }
 
-.article-meta span {
-    /* align-content: center; */
-    text-align: center;
-    margin-right: 0.5em;
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
 }
 </style>
