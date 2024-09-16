@@ -43,4 +43,4 @@ async function cxl_cart_loader() {
 
 
 
-document.addEventListener("domContentLoaded", cxl_cart_loader)
+document.addEventListener("DOMContentLoaded", cxl_cart_loader)
