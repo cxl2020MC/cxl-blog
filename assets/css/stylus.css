@@ -18,7 +18,7 @@ body {
     --card-border-radius: 10px;
 }
 
-[data-theme="light"] {
+.light-mode {
     --bg-color: #fffbf0;
     --card-bg: #fff;
     --blur-bg: rgba(255, 255, 255, 0.8);
@@ -33,6 +33,29 @@ body {
     --theme-color-blue: #1677b3;
     --theme-color-yellow: #d19826;
     --theme-color-gay: #e4e4e4;
+
+    --theme-color-dark: var(--theme-color-blue-dark);
+    --theme-color-red-dark: #b54434;
+    --theme-color-green-dark: #579572;
+    --theme-color-blue-dark: #6699a1;
+    --theme-color-yellow-dark: #ddc871;
+}
+
+.dark-mode {
+    --bg-color: #333;
+    --card-bg: #222;
+    --blur-bg: rgba(0, 0, 0, 0.8);
+
+    --text-color: #fff;
+    --text-color-secondary: #aaa;
+    --text-color-light: #666;
+
+    --theme-color: var(--theme-color-blue);
+    --theme-color-red: #ef6f48;
+    --theme-color-green: #7ba23f;
+    --theme-color-blue: #1677b3;
+    --theme-color-yellow: #d19826;
+    --theme-color-gay: #666;
 
     --theme-color-dark: var(--theme-color-blue-dark);
     --theme-color-red-dark: #b54434;
