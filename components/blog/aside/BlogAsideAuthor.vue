@@ -59,8 +59,8 @@ defineProps<{
     font-size: 0.8em;
     gap: 0.8em;
     border-radius: 999em;
-    background: var(--text-color);
-    color: var(--text-color-light)
+    background: #333;
+    color: #fff
 }
 
 .online {
