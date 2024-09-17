@@ -28,7 +28,6 @@
 </template>
 
 <script setup lang="ts">
-import moment from 'moment'
 import type { Article } from '~/types/article'
 
 defineProps<{
