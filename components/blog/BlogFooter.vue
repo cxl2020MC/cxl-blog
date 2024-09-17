@@ -14,9 +14,8 @@
 <script lang="ts" setup>
 import FormatBuildTime from '~/utils/formatDate';
 
-const BuildTimeObj = useRuntimeConfig().public.BuildTime
+const BuildTime = useRuntimeConfig().public.BuildTime
 
-const BuildTime = FormatBuildTime(BuildTimeObj)
 </script>
 
 <style scoped>

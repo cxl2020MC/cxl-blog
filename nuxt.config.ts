@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { BlogConfig } from "./blog.config";
+import { formatBuildTime } from "./utils/formatDate";
 
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
@@ -26,7 +27,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       api_url: BlogConfig.api_url,
-      BuildTime: new Date(),
+      BuildTime: formatBuildTime(),
     },
   },
 

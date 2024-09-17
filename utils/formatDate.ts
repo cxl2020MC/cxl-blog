@@ -11,6 +11,6 @@ export function formatDateObj(DateObj: Date, format = 'YYYY-MM-DD') {
     return dayjs(DateObj).format(format)
 }
 
-export function formatBuildTime(BuildTime: Date) {
-    return dayjs(BuildTime).format('YYYY-MM-DD HH:mm:ss')
+export function formatBuildTime() {
+    return dayjs().format('YYYY-MM-DD HH:mm:ss')
 }
