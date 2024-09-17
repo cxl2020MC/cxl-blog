@@ -49,16 +49,5 @@ export default defineNuxtConfig({
     storage: "localStorage", // or 'sessionStorage' or 'cookie'
     storageKey: "nuxt-color-mode",
   },
-  mdc: {
-    highlight: {
-      highlighter: "shiki", // "prism" or "shiki"
-
-      langs: ['bat', 'c', 'cpp', 'css', 'diff', 'html', 'ini', 'js', 'json', 'log', 'makefile', 'matlab', 'md', 'mdc', 'powershell', 'python', 'shell', 'ssh-config', 'toml', 'ts', 'tsx', 'vue', 'xml', 'yaml'],
-      theme: {
-        default: 'catppuccin-latte',
-        dark: 'one-dark-pro',
-      },
-    },
-  },
-  modules: ["@nuxt/icon", "@nuxtjs/seo", "@nuxtjs/color-mode", "@nuxtjs/mdc"],
+  modules: ["@nuxt/icon", "@nuxtjs/seo", "@nuxtjs/color-mode", "@nuxt/content"],
 });
