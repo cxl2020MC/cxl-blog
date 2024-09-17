@@ -5,7 +5,7 @@ const route = useRoute()
 console.log(route.params.id)
 
 const req = await useFetch
-('https://blig-nuxt.cxl2020mc.top/test.md')
+('https://blog-nuxt.cxl2020mc.top/test.md')
 console.log(req.data)
 const md = req.data
 
