@@ -7,5 +7,5 @@ export default function(timestamp, format = 'YYYY-MM-DD') {
     return dayjs.unix(unixtime).format(format)
 }
 
-export function formatDateObj(DateObj) {
-    return dayjs(DateObj).format('YYYY-MM-DD )
+export function formatDateObj(DateObj, format = 'YYYY-MM-DD') {
+    return dayjs(DateObj).format(format)
