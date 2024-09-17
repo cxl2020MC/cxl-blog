@@ -135,95 +135,9 @@ Pipe     | \$1
         <tr>
             <th rowspan="2">值班人员</th>
             <th>星期一</th>
-            <th>星期二</th>
-            <th>星期三</th>
-        </tr>
-        <tr>
-            <td>李强</td>
-            <td>张明</td>
-            <td>王平</td>
-        </tr>
-    </table>
- 
- 
-<table>
-    <tr>
-        <th rowspan="2">值班人员</th>
-        <th>星期一</th>
-        <th>星期二</th>
-        <th>星期三</th>
-    </tr>
-    <tr>
-        <td>李强</td>
-        <td>张明</td>
-        <td>王平</td>
-    </tr>
-</table>
- 
-**提示**, 如果想对图片的宽度和高度进行控制, 你也可以通过img标签, 如:
- 
-<img src="http://leanote.com/images/logo/leanote_icon_blue.png" width="50px" />
- 
-## 5.4 脚注
- 
-Leanote[^footnote]来创建一个脚注
-  [^footnote]: Leanote是一款强大的开源云笔记产品.
- 
-## 5.5 目录
- 
-通过 `[TOC]` 在文档中插入目录, 如:
- 
-[TOC]
- 
-## 5.6 时序图与流程图
- 
-```sequence
-Alice->Bob: Hello Bob, how are you?
+            <th>星期二</th>: Hello Bob, how are you?
 Note right of Bob: Bob thinks
 Bob-->Alice: I am good thanks!
-```
- 
-流程图:
- 
-
-st=>start: Start
-e=>end
-op=>operation: My Operation
-cond=>condition: Yes or No?
- 
-st->op->cond
-cond(yes)->e
-cond(no)->op
-
- 
-> **提示:** 更多关于时序图与流程图的语法请参考:
- 
-> - [时序图语法](http://bramp.github.io/js-sequence-diagrams/)
-> - [流程图语法](http://adrai.github.io/flowchart.js)
- 
-## 5.7 MathJax 公式
- 
-$ 表示行内公式： 
- 
-质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。
- 
-$$ 表示整行公式：
- 
-$$\sum_{i=1}^n a_i=0$$
- 
-$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$
- 
-$$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
- 
-更复杂的公式:
-$$
-\begin{eqnarray}
-\vec\nabla \times (\vec\nabla f) & = & 0  \cdots\cdots梯度场必是无旋场\\
-\vec\nabla \cdot(\vec\nabla \times \vec F) & = & 0\cdots\cdots旋度场必是无散场\\
-\vec\nabla \cdot (\vec\nabla f) & = & {\vec\nabla}^2f\\
-\vec\nabla \times(\vec\nabla \times \vec F) & = & \vec\nabla(\vec\nabla \cdot \vec F) - {\vec\nabla}^2 \vec F\\
-\end{eqnarray}
-$$
 `
 
 </script>
