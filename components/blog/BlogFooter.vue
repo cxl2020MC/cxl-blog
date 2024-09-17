@@ -12,8 +12,11 @@
 </template>
 
 <script lang="ts" setup>
-import moment from 'moment';
-const BuildTime = moment(useRuntimeConfig().public.BuildTime).format("YYYY-MM-DD HH:mm:ss")
+import FormatBuildTime from '~/utils/formatDate';
+
+const BuildTimeObj = useRuntimeConfig().public.BuildTime
+
+const BuildTime = FormatBuildTime(BuildTimeObj)
 </script>
 
 <style scoped>

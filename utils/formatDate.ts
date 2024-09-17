@@ -1,11 +1,16 @@
-import * as dayjs from 'dayjs'
+import dayjs from 'dayjs'
 import 'dayjs/locale/zh-cn'
 
 dayjs.locale('zh-cn')
 
-export default function(timestamp, format = 'YYYY-MM-DD') {
-    return dayjs.unix(unixtime).format(format)
+export default function(timestamp: number, format = 'YYYY-MM-DD') {
+    return dayjs.unix(timestamp).format(format)
 }
 
-export function formatDateObj(DateObj, format = 'YYYY-MM-DD') {
+export function formatDateObj(DateObj: Date, format = 'YYYY-MM-DD') {
     return dayjs(DateObj).format(format)
+}
+
+export function formatBuildTime(BuildTime: Date) {
+    return dayjs(BuildTime).format('YYYY-MM-DD HH:mm:ss')
+}
