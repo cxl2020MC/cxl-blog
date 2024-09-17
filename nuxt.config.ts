@@ -50,5 +50,5 @@ export default defineNuxtConfig({
     storageKey: 'nuxt-color-mode',
   },
 
-  modules: ["@nuxt/icon", "@nuxtjs/seo", "@nuxtjs/color-mode"],
+  modules: ["@nuxt/icon", "@nuxtjs/seo", "@nuxtjs/color-mode", "@nuxtjs/mdc"],
 });

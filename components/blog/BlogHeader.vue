@@ -2,8 +2,6 @@
 const Config = useAppConfig()
 const colorMode = useColorMode()
 
-console.log(colorMode.preference)
-
 function toggleColorMode() {
     if (colorMode.preference == 'system') {
         colorMode.preference = 'light'
@@ -12,6 +10,7 @@ function toggleColorMode() {
     } else if (colorMode.preference == 'dark') {
         colorMode.preference = 'system'
     }
+    console.log(colorMode.value)
 }
 
 const site_name = Config.site_name
@@ -26,7 +25,30 @@ const menu_links = [
         name: '关于',
         icon: 'fa6-solid:address-card',
         link: '/about'
-    }
+    },
+    {
+        name: '归档',
+        icon: '',
+        link: '/archives'
+    },
+    {
+        name: '分类',
+        icon: 'fa6-solid:folder-open',
+        sublinks: [
+            {
+                name: '前端',
+                link: '/categories/前端'
+            },
+            {
+                name: '后端',
+                link: '/categories/后端'
+            },
+            {
+                name: '其他',
+                link: '/categories/其他'
+            }
+        ]
+    },
 ]
 
 
@@ -38,18 +60,26 @@ const menu_dialog = ref<any | null>(null)
         <a id="site-name" href="/">{{ site_name }}</a>
 
         <div id="menu-items">
-            <a class="menu-item" v-for="link in menu_links" :key="link.name" :href="link.link">
-                <icon v-if="link.icon" :name="link.icon" class="menu-icon"></icon>
-                <span>{{ link.name }}</span>
-            </a>
+            <template v-for="link in menu_links" :key="link.name">
+                <a class="menu-item" v-if="link.link" :href="link.link">
+                    <icon v-if="link.icon" :name="link.icon" class="menu-icon"></icon>
+                    <span>{{ link.name }}</span>
+                </a>
+                <div class="menu-item-group" v-else>
+                    <icon v-if="link.icon" :name="link.icon" class="menu-icon"></icon>
+                    <span>{{ link.name }}</span>
+                    <div class="menu-item-group-items">
+                        <a v-for="sublink in link.sublinks" :key="sublink.name" :href="sublink.link">{{ sublink.name }}</a>
+                    </div>
+                </div>
+            </template>
         </div>
         <div id="menu-buttons">
             <button class="menu-button">
                 <icon name="fa6-brands:github" class="menu-icon"></icon>
             </button>
             <button class="menu-button" @click="toggleColorMode">
-                <icon v-if="colorMode.preference == 'system'" name="fa6-solid:circle-half-stroke" class="menu-icon">
-                </icon>
+                <icon v-if="colorMode.preference == 'system'" name="fa6-solid:circle-half-stroke" class="menu-icon"></icon>
                 <icon v-else-if="colorMode.preference == 'light'" name="fa6-solid:sun" class="menu-icon"></icon>
                 <icon v-else-if="colorMode.preference == 'dark'" name="fa6-solid:moon" class="menu-icon"></icon>
             </button>
@@ -79,7 +109,6 @@ const menu_dialog = ref<any | null>(null)
     background-color: var(--blur-bg);
 
     display: flex;
-    /* margin: 0 auto; */
     justify-content: space-between;
     align-items: center;
 }
@@ -129,6 +158,24 @@ const menu_dialog = ref<any | null>(null)
 
 .menu-item:hover {
     background: rgba(0, 0, 0, 0.1)
+}
+
+.menu-item-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.menu-item-group:hover {
+    background: none;
+}
+
+.menu-item-group:hover .menu-item {
+    background: rgba(0, 0, 0, 0.1)
+}
+
+.menu-item-group-items {
+    display: none;
 }
 
 #menu-buttons {
