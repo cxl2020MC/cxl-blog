@@ -57,7 +57,7 @@ const menu_dialog = ref<any | null>(null)
 
 <template>
     <nav id="navbar">
-        <a id="site-name" href="/">{{ site_name }}</a>
+        <NuxtLink id="site-name" to="/">{{ site_name }}</NuxtLink>
 
         <div id="menu-items">
             <template v-for="link in menu_links" :key="link.name">
