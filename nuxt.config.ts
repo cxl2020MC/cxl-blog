@@ -75,6 +75,6 @@ mdc: {
         // This map will be used in `<MDCRenderer>` to control rendered components
       }
     }
-}
+},
   modules: ["@nuxt/icon", "@nuxtjs/seo", "@nuxtjs/color-mode", "@nuxtjs/mdc"],
 });
