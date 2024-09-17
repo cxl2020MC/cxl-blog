@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     head: {
       title: "cxl`s Blog",
       htmlAttrs: {
-        "data-theme": "light",
+        // "data-theme": "light",
       },
       meta: [
         // { name: 'viewport', content: 'width=device-width, initial-scale=1' }
@@ -48,6 +48,18 @@ export default defineNuxtConfig({
     classSuffix: "-mode",
     storage: "localStorage", // or 'sessionStorage' or 'cookie'
     storageKey: "nuxt-color-mode",
+  },
+  content: {
+    locales: [
+      BlogConfig.language,
+    ],
+    highlight: {
+      langs: ['bat', 'c', 'cpp', 'css', 'diff', 'html', 'ini', 'js', 'json', 'log', 'makefile', 'matlab', 'md', 'mdc', 'powershell', 'python', 'shell', 'ssh-config', 'toml', 'ts', 'tsx', 'vue', 'xml', 'yaml'],
+      theme: {
+        default: 'catppuccin-latte',
+        dark: 'one-dark-pro',
+      },
+    },
   },
   modules: ["@nuxt/icon", "@nuxtjs/seo", "@nuxtjs/color-mode", "@nuxt/content"],
 });
