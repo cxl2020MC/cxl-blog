@@ -35,10 +35,10 @@ defineProps<{
     article: Article
 }>()
 
-function formatDate(date: number) {
+// function formatDate(date: number) {
     // const dateObj = new Date(date)
-    return moment.unix(date).format("YYYY-MM-DD")
-}
+    // return moment.unix(date).format("YYYY-MM-DD")
+// }
 
 </script>
 
