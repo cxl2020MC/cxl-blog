@@ -1,14 +1,14 @@
 <template>
     <div class="article-card">
         <div class="article-image">
-            <a :href="article.link">
+            <NuxtLink :href="article.link">
                 <img :src="article.cover" :alt="article.title" />
-            </a>
+            </NuxtLink>
         </div>
         <div class="article-info">
-            <a :href="article.link">
+            <NuxtLink :href="article.link">
                 <h3>{{ article.title }}</h3>
-            </a>
+            </NuxtLink>
             <p>{{ article.description }}</p>
             <div class="article-metas">
                 <div class="article-meta">
@@ -20,7 +20,7 @@
                     更新于：{{ formatDate(article.updated_at) }}
                 </div>
                 <div  class="article-meta" v-if="article.tags?.length">
-                    <Icon name="fa6-solid:tags" /> {{ article.tags.join(', ') }}
+                    <Icon name="fa6-solid:tags" /> {{ article.tags.join('·') }}
                 </div>
             </div>
         </div>
