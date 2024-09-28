@@ -9,14 +9,12 @@
 
 .shiki{
     overflow-x: auto;
-    /* width: fit-content; */
-    min-width: 0;
+    border-radius: var(--card-border-radius);
+    padding: 1em;
 }
 
-.shiki code {
+/* .shiki code {
     display: block;
-    overflow-x: auto;
-    width: fit-content;
     padding: 0.5em;
-}
+} */
 

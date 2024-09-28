@@ -24,6 +24,5 @@ console.log(md_html)
 
 <style scoped>
 
-
 /* @import '~/assets/css/markdown.css' */
 </style>

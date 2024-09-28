@@ -14,8 +14,8 @@ body {
     --card-border: 1px solid var(--theme-color-gay);
     --card-border-hover: 1px solid var(--theme-color);
     --input-border: 1px solid var(--theme-color-gay);
-    --bottom-border-readius: 10px;
-    --card-border-radius: 10px;
+    --bottom-border-readius: 0.5em;
+    --card-border-radius: 1em;
 }
 
 .light-mode {
