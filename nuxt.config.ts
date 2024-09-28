@@ -62,5 +62,5 @@ export default defineNuxtConfig({
       },
     },
   },
-  modules: ["@nuxt/icon", "@nuxtjs/seo", "@nuxtjs/color-mode", "@nuxt/content"],
+  modules: ["@nuxt/icon", "@nuxtjs/seo", "@nuxtjs/color-mode"],
 });
