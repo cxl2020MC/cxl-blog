@@ -6,7 +6,7 @@
             </NuxtLink>
         </div>
         <div class="article-info">
-            <NuxtLink :to="'/posts' + article.link">
+            <NuxtLink :to="'/posts/' + article.link">
                 <h3>{{ article.title }}</h3>
             </NuxtLink>
             <p>{{ article.description }}</p>
