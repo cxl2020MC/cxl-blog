@@ -28,6 +28,7 @@ const processor = unified()
 
 // console.log(String(file))
 
-export default function renderMarkdown(markdown: string) {
-    return String(processor.processSync(markdown))
+export default async function renderMarkdown(markdown: string) {
+    const file = await processor.process(markdown)
+    return String(file)
 }
