@@ -171,7 +171,7 @@ Leanote[^footnote]来创建一个脚注
  
 ## 5.6 时序图与流程图
  
-```sequence
+```
 Alice->Bob: Hello Bob, how are you?
 Note right of Bob: Bob thinks
 Bob-->Alice: I am good thanks!
