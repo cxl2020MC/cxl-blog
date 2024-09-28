@@ -1,12 +1,12 @@
 <template>
     <div class="article-card">
         <div class="article-image">
-            <NuxtLink :href="article.link">
+            <NuxtLink :to="'/posts/' + article.link">
                 <img :src="article.cover" :alt="article.title" />
             </NuxtLink>
         </div>
         <div class="article-info">
-            <NuxtLink :href="article.link">
+            <NuxtLink :to="'/posts' + article.link">
                 <h3>{{ article.title }}</h3>
             </NuxtLink>
             <p>{{ article.description }}</p>
