@@ -19,10 +19,13 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* overflow-x: auto; */
 }
 .content {
     flex: 1 1 40em;
-    min-width: 0;
+    /* 子元素溢出，代码块无滚动条，以下2种方式均可修复 */
+    /* min-width: 0; */
+    overflow-x: auto;
 }
 
 .aside {
