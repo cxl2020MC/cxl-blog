@@ -16,9 +16,8 @@ const processor = unified()
     .use(rehypeRaw)
     .use(rehypeShiki, {
         themes: {
-            default: 'github-light',
-            light: 'github-light',
-            dark: 'github-dark'
+            light: 'catppuccin-latte',
+            dark: 'catppuccin-mocha'
         },
     })
     .use(rehypeStringify)

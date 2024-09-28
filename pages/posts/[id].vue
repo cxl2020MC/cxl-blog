@@ -23,13 +23,7 @@ console.log(md_html)
 </template>
 
 <style scoped>
-.post-content {
-    /* width: 100%; */
-    white-space: pre-wrap;
-    word-wrap:break-word;
 
-    word-break:normal; 
-}
 
 /* @import '~/assets/css/markdown.css' */
 </style>

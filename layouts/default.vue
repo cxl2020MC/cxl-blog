@@ -5,22 +5,22 @@
 <template>
     <NuxtLoadingIndicator color="var(--theme-color)" />
     <BlogHeader />
-    <div class="main">
-        <main>
+    <main>
+        <div class="content">
             <slot />
-        </main>
+        </div>
         <BlogAside class="aside" />
-    </div>
+    </main>
     <BlogFooter />
 </template>
 
 <style scoped>
-.main {
+main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-main {
+.content {
     flex: 1 1 40em;
 }
 
@@ -29,7 +29,7 @@ main {
 }
     
 @media (min-width: 50em) {
-    main {
+    .content {
         max-width: 75em;
     }
     .aside {
