@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import renderMarkdown from '~/utils/renderMarkdown'
+import renderMarkdown from '@/utils/renderMarkdown'
 import '~/assets/css/markdown.css'
 
 const { params } = useRoute()
