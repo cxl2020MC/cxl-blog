@@ -9,8 +9,8 @@
 
 .shiki{
     overflow-x: auto;
-    width: fit-content;
-    min-width: 100%;
+    /* width: fit-content; */
+    min-width: 0;
 }
 
 .shiki code {
