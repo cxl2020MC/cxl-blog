@@ -26,7 +26,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      api_url: BlogConfig.api_url,
+      apiBase: BlogConfig.api_url,
       BuildTime: formatBuildTime(),
     },
   },

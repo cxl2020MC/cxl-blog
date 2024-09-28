@@ -9,7 +9,7 @@
         <main>
             <slot />
         </main>
-        <BlogAside />
+        <BlogAside class="aside" />
     </div>
     <BlogFooter />
 </template>

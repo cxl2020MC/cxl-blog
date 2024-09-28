@@ -9,10 +9,10 @@
 <script lang="ts" setup>
 import type { Article } from '~/types/article';
 
-const api_url = useRuntimeConfig().public.api_url
+const api_url = useRuntimeConfig().public.apiBase
 const req = await useFetch < {
     data: Array < Article >
-} > (`${api_url}/postlist`)
+} > (`${api_url}/posts`)
 const articles = req.data
 
 console.log(articles.value)

@@ -1,12 +1,18 @@
-<template>
-    <div class="main">
-        <main>
-            <ContentDoc />
-        </main>
-        <BlogAside />
-    </div>
-</template>
+<script lang="ts" setup>
+import { renderMarkdown } from @utils/renderMarkdown
 
+const { params } = useRoute()
+const config = useRuntimeConfig()
+const api_url = config.public.apiBase
+
+const { data } = await useFetch(`${api_url}/posts/${params.id}`)
+const post = data.value
+
+</script>
+
+<template>
+    
+</template>
 
 <style scoped>
 .main {
