@@ -1,11 +1,16 @@
 <script lang="ts" setup>
 import renderMarkdown from '~/utils/renderMarkdown'
+import '~/assets/css/markdown.css'
 
 const { params } = useRoute()
 const config = useRuntimeConfig()
 const api_url = config.public.apiBase
 
-const { data } = await useFetch(`${api_url}/posts/${params.id}`)
+const { data } = await useFetch<{
+    data: {
+        md_content: string
+    }
+}>(`${api_url}/posts/${params.id}`)
 const post = data.value
 console.log(post)
 const md_html = await renderMarkdown(post.data.md_content)
@@ -13,30 +18,18 @@ console.log(md_html)
 </script>
 
 <template>
-    <div class="post-content" v-html="md_html">
+    <div class="post-content card" v-html="md_html">
     </div>
 </template>
 
 <style scoped>
-.main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-main {
-    flex: 1 1 40em;
+.post-content {
+    /* width: 100%; */
+    white-space: pre-wrap;
+    word-wrap:break-word;
+
+    word-break:normal; 
 }
 
-.aside {
-    flex: 1 1 10em;
-}
-    
-@media (min-width: 50em) {
-    main {
-        max-width: 75em;
-    }
-    .aside {
-        max-width: 20em;
-    }
-}
+/* @import '~/assets/css/markdown.css' */
 </style>
