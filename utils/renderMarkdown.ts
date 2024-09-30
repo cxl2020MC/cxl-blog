@@ -19,6 +19,7 @@ const processor = unified()
             light: 'catppuccin-latte',
             dark: 'catppuccin-mocha'
         },
+        // inLine: "tailing-curly-colon",
     })
     .use(rehypeStringify)
 

@@ -12,8 +12,8 @@
   "dependencies": {
     "@nuxt/icon": "^1.5.2",
     "@nuxtjs/color-mode": "^3.5.1",
-    "@nuxtjs/seo": "2.0.0-rc.21",
-    "@shikijs/rehype": "^1.20.0",
+    "@nuxtjs/seo": "2.0.0-rc.23",
+    "@shikijs/rehype": "^1.21.0",
     "dayjs": "^1.11.13",
     "nuxt": "^3.13.2",
     "rehype-raw": "^7.0.0",
