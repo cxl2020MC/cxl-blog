@@ -8,7 +8,14 @@ import rehypeShiki from '@shikijs/rehype'
 
 import { unified } from 'unified'
 
-const processor = unified()
+
+// const value = '# Pluto\n\n**Pluto** (minor-planet designation: *13434…'
+// const file = await processor.process(value)
+
+// console.log(String(file))
+
+export default async function renderMarkdown(markdown: string) {
+    const processor = unified()
     .use(remarkParse)
     .use(remarkGfm)
     .use(remarkMath)
@@ -23,12 +30,6 @@ const processor = unified()
     })
     .use(rehypeStringify)
 
-// const value = '# Pluto\n\n**Pluto** (minor-planet designation: *13434…'
-// const file = await processor.process(value)
-
-// console.log(String(file))
-
-export default async function renderMarkdown(markdown: string) {
     const file = await processor.process(markdown)
     return String(file)
 }
