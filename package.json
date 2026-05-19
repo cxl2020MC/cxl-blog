@@ -15,7 +15,7 @@
     "@nuxtjs/seo": "2.0.0-rc.23",
     "@shikijs/rehype": "^1.21.0",
     "dayjs": "^1.11.13",
-    "nuxt": "^3.13.2",
+    "nuxt": "^3.21.6",
     "rehype-raw": "^7.0.0",
     "rehype-stringify": "^10.0.1",
     "remark-gfm": "^4.0.0",
